@@ -1,0 +1,670 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Century Group API Core",
+        "description": "This handles all user and role management concerning century group.",
+        "version": "1.0.0",
+        "termsOfService": "http://beego.me/",
+        "contact": {
+            "email": "endy.apina@my-gpi.io"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "basePath": "/v1",
+    "paths": {
+        "/admin/frontdesk/": {
+            "get": {
+                "tags": [
+                    "admin"
+                ],
+                "description": "gets the list of all front desk officers",
+                "operationId": "AdminController.Create",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.User"
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/admin/frontdesk/{id}": {
+            "post": {
+                "tags": [
+                    "admin"
+                ],
+                "description": "adds a new front desk officer using the user ID",
+                "operationId": "AdminController.Create",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "visitid",
+                        "description": "the id of the user you want to make a front desk officer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} id of the user"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "admin"
+                ],
+                "description": "deletes a front desk officer using the user ID",
+                "operationId": "AdminController.Delete",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "visitid",
+                        "description": "the id of the user you want to delete",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} id of the user"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/admin/teamlead/": {
+            "get": {
+                "tags": [
+                    "admin"
+                ],
+                "description": "gets the list of all team leads on the system",
+                "operationId": "AdminController.GetAllTeamLead",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.User"
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/admin/teamlead/{id}": {
+            "post": {
+                "tags": [
+                    "admin"
+                ],
+                "description": "adds a new new team lead to the system",
+                "operationId": "AdminController.AddNewTeamLead",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "visitid",
+                        "description": "the id of the user you want to make a front desk officer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} id of the user"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "admin"
+                ],
+                "description": "deletes a team lead using the user ID",
+                "operationId": "AdminController.Delete",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "visitid",
+                        "description": "the id of the user you want to delete",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} id of the user"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/token/validate": {
+            "get": {
+                "tags": [
+                    "token"
+                ],
+                "description": "validates a user token and send a true or false response depending on the validity",
+                "operationId": "TokenController.ValidateAttachedToken",
+                "responses": {
+                    "200": {
+                        "description": "{int} models.ValidResponse"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/upload/image": {
+            "post": {
+                "tags": [
+                    "upload"
+                ],
+                "description": "validates an invitation link and confirms it.",
+                "operationId": "UploadController.Accepts Invitation Link",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "A json containing the role {int}, email {string} and code {string}",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.Invitation"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} \"Invitation Url\""
+                    }
+                }
+            }
+        },
+        "/user/": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "get all users on the system",
+                "operationId": "UserController.GetAllUsers",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ValidResponse"
+                        }
+                    },
+                    "403": {
+                        "description": ":uid is empty"
+                    }
+                }
+            }
+        },
+        "/user/login": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "Logs user into the system",
+                "operationId": "UserController.Login",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "username",
+                        "description": "The username for login",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "password",
+                        "description": "The password for login",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.SuccessData"
+                        }
+                    },
+                    "403": {
+                        "description": "user not exist"
+                    }
+                }
+            }
+        },
+        "/user/password/recover/{email}": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "recover lost password",
+                "operationId": "UserController.Recover password",
+                "responses": {
+                    "200": {
+                        "description": "{string} \"success\""
+                    }
+                }
+            }
+        },
+        "/user/password/reset": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "recover lost password",
+                "operationId": "UserController.Recover password",
+                "responses": {
+                    "200": {
+                        "description": "{string} \"success\""
+                    }
+                }
+            }
+        },
+        "/user/password/update": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "update user password",
+                "operationId": "UserController.PasswordUpdate",
+                "responses": {
+                    "200": {
+                        "description": "{string} \"success\""
+                    }
+                }
+            }
+        },
+        "/user/register": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "create users",
+                "operationId": "UserController.CreateUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for user content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{int} models.User.Id"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/user/update/": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "update the user profile",
+                "operationId": "UserController.UpdateProfile",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "uid",
+                        "description": "The uid you want to update",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for user content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "403": {
+                        "description": ":uid is not int"
+                    }
+                }
+            }
+        },
+        "/user/update/avatar/": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "update the user profile avatar",
+                "operationId": "UserController.UpdateProfilePicture",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "uid",
+                        "description": "The uid you want to update",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for user content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "403": {
+                        "description": ":uid is not int"
+                    }
+                }
+            }
+        },
+        "/user/{departmentid}": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "get all Users",
+                "operationId": "UserController.GetAll",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "departmentID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.User"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/utility/departments/": {
+            "get": {
+                "tags": [
+                    "utility"
+                ],
+                "description": "gets the list of all departments in the system",
+                "operationId": "UtilityController.GetDepartmentList",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ValidResponse"
+                        }
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/utility/departments/{subsidiaryid}": {
+            "get": {
+                "tags": [
+                    "utility"
+                ],
+                "description": "gets the list of all departments in a subsidiary",
+                "operationId": "UtilityController.GetSubDepartmentList",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ValidResponse"
+                        }
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/utility/subsidiary/": {
+            "get": {
+                "tags": [
+                    "utility"
+                ],
+                "description": "gets the list of all subsidiaries in the system",
+                "operationId": "UtilityController.GetSubsidiaryList",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ValidResponse"
+                        }
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/validate/password/code": {
+            "post": {
+                "tags": [
+                    "validate"
+                ],
+                "description": "validates a user recovery email and send a true or false response depending on the validity",
+                "operationId": "ValidateController.ValidateResetPasswordCode",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ValidResponse"
+                        }
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/validate/teamlead/": {
+            "get": {
+                "tags": [
+                    "validate"
+                ],
+                "description": "validates a user to see if he is a team lead. Returns true or false response",
+                "operationId": "ValidateController.ValidateTeamLead",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.ValidResponse"
+                        }
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "models.Invitation": {
+            "title": "Invitation",
+            "type": "object"
+        },
+        "models.Model": {
+            "title": "Model",
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "deleted_at": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "format": "datetime"
+                }
+            }
+        },
+        "models.SuccessData": {
+            "title": "SuccessData",
+            "type": "object"
+        },
+        "models.User": {
+            "title": "User",
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "deleted_at": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "department": {
+                    "type": "string"
+                },
+                "department_id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "full_name": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "image": {
+                    "type": "string"
+                },
+                "job_title": {
+                    "type": "string"
+                },
+                "linked_in": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "number": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "role": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "subsidiary": {
+                    "type": "string"
+                },
+                "subsidiary_id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "format": "datetime"
+                }
+            }
+        },
+        "models.ValidResponse": {
+            "title": "ValidResponse",
+            "type": "object"
+        }
+    },
+    "tags": [
+        {
+            "name": "user",
+            "description": "UserController handles all about users.\nHandles all User controls\n"
+        },
+        {
+            "name": "token",
+            "description": "TokenController handles all about tokens.\n"
+        },
+        {
+            "name": "validate",
+            "description": "ValidateController handles all validation.\n"
+        },
+        {
+            "name": "utility",
+            "description": "UtilityController handles all extra utilities.\n"
+        },
+        {
+            "name": "upload",
+            "description": "UploadController handles uploads of images, documents, csvs etc\n"
+        },
+        {
+            "name": "admin",
+            "description": "AdminController handles all functions that belongs explicitly to the admin\n"
+        }
+    ]
+}

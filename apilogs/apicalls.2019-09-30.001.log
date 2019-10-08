@@ -1,0 +1,514 @@
+2019/08/28 11:28:23.742 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 11:28:25.135 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 11:28:26.676 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:05:52.629 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:06:06.683 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:11:51.089 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:13:15.205 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:13:25.097 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:35:47.304 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:35:47.509 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:54:02.371 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:54:44.168 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:58:06.621 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:58:19.068 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 12:58:53.618 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:10:12.782 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:20:57.325 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:27:11.590 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:30:51.618 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:30:53.280 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:31:51.896 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:34:29.451 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:34:31.040 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:34:46.719 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:35:27.928 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:36:00.469 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:36:18.797 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:36:34.898 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:42:46.186 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 13:47:36.501 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 14:06:05.443 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 14:27:03.266 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/28 14:27:31.501 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 16:56:49.935 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 16:56:51.468 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 16:56:52.785 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 16:56:54.232 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 16:57:00.690 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 16:58:43.508 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 17:52:01.873 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 17:52:03.451 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 17:52:05.214 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 17:52:06.875 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 17:57:31.685 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 17:57:33.172 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/08/30 17:57:34.556 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 09:42:42.666 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 09:42:43.572 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 09:42:44.857 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 09:42:46.129 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 09:42:48.168 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 09:45:25.498 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 10:22:17.106 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 10:28:41.383 [C] [panic.go:522]  the request url is  /v1/register
+2019/09/04 10:28:41.383 [C] [panic.go:522]  Handler crashed with error runtime error: index out of range
+2019/09/04 10:28:41.384 [C] [panic.go:522]  C:/Go/src/runtime/panic.go:522
+2019/09/04 10:28:41.385 [C] [panic.go:522]  C:/Go/src/runtime/panic.go:44
+2019/09/04 10:28:41.386 [C] [panic.go:522]  C:/Users/apina/go/src/pasregistration/controllers/utilities.go:103
+2019/09/04 10:28:41.386 [C] [panic.go:522]  C:/Users/apina/go/src/pasregistration/controllers/utilities.go:33
+2019/09/04 10:28:41.386 [C] [panic.go:522]  C:/Users/apina/go/src/github.com/astaxie/beego/router.go:644
+2019/09/04 10:28:41.387 [C] [panic.go:522]  C:/Users/apina/go/src/github.com/astaxie/beego/router.go:730
+2019/09/04 10:28:41.387 [C] [panic.go:522]  C:/Go/src/net/http/server.go:2774
+2019/09/04 10:28:41.387 [C] [panic.go:522]  C:/Go/src/net/http/server.go:1878
+2019/09/04 10:28:41.388 [C] [panic.go:522]  C:/Go/src/runtime/asm_amd64.s:1337
+2019/09/04 10:28:41.390 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/09/04 10:29:44.009 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.4µs|   match|[44m GET     [0m /swagger/
+2019/09/04 10:29:44.029 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      959.9µs|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/04 10:29:44.037 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     8.9402ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/09/04 10:29:44.037 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     7.9803ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/09/04 10:29:44.918 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/04 10:29:45.036 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.1µs|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/04 10:30:23.161 [D] [server.go:2774]  |            ::1|[43m 404 [0m|     1.0006ms| nomatch|[44m GET     [0m /v1/user/register
+2019/09/04 10:32:23.639 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 10:48:13.384 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0013ms|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 10:53:14.465 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 10:58:39.543 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 11:06:49.623 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 11:12:21.853 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 11:12:21.859 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.6µs|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 11:12:39.734 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 11:12:39.738 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 11:15:03.238 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 11:15:03.242 [D] [server.go:2774]  |            ::1|[42m 200 [0m|          1ms|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 11:15:13.807 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.4µs| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 11:15:13.811 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 11:19:57.035 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 11:19:58.553 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 11:20:15.501 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 11:20:55.390 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 11:20:55.395 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      986.4µs|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 11:23:15.504 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:16:52.670 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:17:09.184 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:17:09.189 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:17:42.338 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:18:04.032 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:18:04.036 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:19:44.177 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:19:44.182 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:21:33.613 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:21:33.619 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:23:39.680 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:23:39.686 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      993.8µs|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:26:12.124 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:26:29.162 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:26:40.787 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:26:40.792 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0137ms|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:28:07.046 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:28:07.050 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.4µs|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:29:11.060 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:29:11.065 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:30:13.979 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:30:13.983 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:31:16.071 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:31:23.109 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.5µs| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:31:23.113 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:32:24.546 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:32:35.445 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:32:35.449 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.5µs|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:38:17.884 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:38:26.828 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:39:16.823 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.5µs| nomatch|[47m OPTIONS [0m /v1/user/register
+2019/09/04 17:39:16.827 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:39:50.994 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.3µs|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:47:16.711 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 17:47:45.309 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:52:45.853 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:53:36.397 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 17:59:51.009 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 18:00:38.345 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 18:03:15.610 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        232µs|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/04 18:18:23.020 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 18:18:24.672 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 18:18:26.257 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 18:18:27.912 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 18:18:29.488 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 18:18:30.863 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 18:18:32.604 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 18:18:33.783 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/04 18:26:55.812 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        997µs|   match|[44m GET     [0m /swagger/
+2019/09/04 18:26:55.829 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/04 18:26:56.019 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/04 18:26:56.036 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        997µs|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/04 19:05:52.762 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 15:43:33.648 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 15:43:36.509 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 15:50:02.110 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/05 15:51:35.082 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9641ms|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/05 15:56:27.418 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:00:12.257 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:00:20.475 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0356359s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/05 16:00:42.277 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:34:23.048 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:40:49.640 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.6874036s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/05 16:43:47.109 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:43:48.362 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:43:49.759 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:43:51.184 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:43:52.556 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/05 16:43:53.957 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:09:21.548 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:09:22.492 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:09:23.794 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:14:27.317 [D] [server.go:2774]  |            ::1|[47m 304 [0m|     1.9946ms|   match|[44m GET     [0m /swagger/
+2019/09/06 03:14:27.335 [D] [server.go:2774]  |            ::1|[47m 304 [0m|     2.9914ms|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/06 03:14:27.344 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     9.9832ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/09/06 03:14:27.344 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    10.9744ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/09/06 03:14:27.542 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/06 03:14:44.627 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:14:49.973 [D] [server.go:2774]  |            ::1|[47m 304 [0m|     1.9968ms|   match|[44m GET     [0m /swagger/
+2019/09/06 03:14:50.081 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/06 03:14:51.145 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/
+2019/09/06 03:14:51.158 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.1µs|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/06 03:14:51.161 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      1.994ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/09/06 03:14:51.161 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      2.992ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/09/06 03:14:51.261 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/06 03:14:51.268 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/06 03:21:08.670 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   962.9288ms|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/06 03:21:28.286 [D] [server.go:2774]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /swagger/
+2019/09/06 03:21:28.503 [D] [server.go:2774]  |            ::1|[47m 304 [0m|      997.6µs|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/06 03:21:28.518 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.4µs|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/06 03:21:29.383 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/
+2019/09/06 03:21:29.394 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/06 03:21:29.395 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/09/06 03:21:29.395 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.4µs|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/09/06 03:21:29.488 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/06 03:21:29.494 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/06 03:22:27.688 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    1.927676s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/06 03:23:20.655 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.1821872s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/06 03:23:56.273 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.2931676s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/06 03:37:03.991 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:37:16.865 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:37:55.447 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:42:09.916 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.3383372s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/06 03:42:24.622 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   996.5486ms|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/06 03:53:29.310 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9949ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 03:54:42.141 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9632ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 03:55:00.354 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 03:55:34.831 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 03:55:35.015 [D] [server.go:2774]  |      127.0.0.1|[42m 200 [0m|     1.9978ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 03:56:18.771 [D] [server.go:2774]  |      127.0.0.1|[42m 200 [0m|     1.9957ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 03:56:30.418 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 04:33:02.666 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 04:33:17.246 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   490.1432ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 04:35:37.543 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 04:35:43.210 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.3241831s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 04:39:18.069 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0996488s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:15:15.597 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 10:19:14.173 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 10:21:47.511 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   383.8751ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:22:44.938 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    423.667ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:23:12.230 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   200.5654ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:24:06.988 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   499.2363ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:25:39.259 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   172.0625ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:27:08.192 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   179.1171ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:27:52.042 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    169.772ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:29:12.617 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/06 10:29:22.984 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   693.7664ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/06 10:29:29.484 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0031737s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/17 09:58:54.569 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 09:58:55.994 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 09:58:57.449 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 09:58:58.929 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 09:59:00.866 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 09:59:02.340 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 09:59:03.958 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 09:59:05.676 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 09:59:07.180 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 10:54:23.739 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   448.1044ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/17 10:54:35.137 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0763813s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/09/17 10:59:06.597 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.3136193s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/17 11:08:18.657 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    2.237198s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/17 11:29:01.201 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 11:29:08.872 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 11:51:23.983 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 11:51:30.323 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 11:51:50.278 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 14:02:11.222 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com
+2019/09/17 14:04:23.619 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 14:04:34.617 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9967ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/17 14:06:01.224 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 14:08:44.288 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 14:09:09.454 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   115.8885ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/17 14:27:18.640 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   490.7135ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/17 14:46:47.379 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 14:48:03.870 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    221.506ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/17 14:51:39.956 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.2µs|   match|[44m GET     [0m /v1/user/password/recover/apinaonome@my-gpi.io   r:/v1/user/password/recover/:email
+2019/09/17 14:59:53.258 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:10:57.437 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:10:59.463 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:11:01.835 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:11:04.181 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:11:06.465 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:11:08.822 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:11:11.143 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:11:41.777 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 15:11:59.370 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   480.6716ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/17 15:21:29.040 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 17:30:32.939 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   855.9637ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/17 17:31:49.860 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 17:31:59.080 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 17:32:15.872 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   153.7797ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/17 18:45:45.514 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 18:46:01.615 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 18:46:17.182 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 18:46:24.736 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:24:02.410 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1//password/code
+2019/09/17 19:24:02.544 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[46m POST    [0m /v1//password/code
+2019/09/17 19:24:10.991 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:25:21.807 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:25:25.013 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      984.4µs| nomatch|[47m OPTIONS [0m /v1/password/code
+2019/09/17 19:25:25.122 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[46m POST    [0m /v1/password/code
+2019/09/17 19:25:48.473 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/17 19:25:48.572 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/17 19:27:13.534 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/17 19:27:13.842 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   193.0132ms|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/17 19:28:05.730 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:28:11.096 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/17 19:28:11.205 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.2µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/17 19:28:25.915 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/17 19:28:25.923 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/17 19:29:14.198 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:29:16.233 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/17 19:29:16.335 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.0223ms|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/17 19:29:39.754 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:29:40.431 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/17 19:29:40.543 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     4.0058ms|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/17 19:30:33.145 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:30:41.913 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/17 19:30:42.014 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.9912ms|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/17 19:31:11.739 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:31:21.268 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/17 19:31:23.026 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/17 19:31:23.037 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.9801ms|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/17 19:31:40.662 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/18 13:20:21.534 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/18 13:20:21.892 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/18 14:10:13.638 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/18 14:10:15.465 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/18 14:10:16.246 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/18 14:10:17.387 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:34.594 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:35.629 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:36.881 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:38.201 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:39.323 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:40.554 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:42.044 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:43.001 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:44.305 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:04:52.473 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:05:27.353 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   265.5228ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/19 10:16:15.686 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 10:16:33.505 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   338.1272ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/19 10:17:18.029 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 10:17:18.060 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        998µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 11:25:08.378 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 11:25:24.013 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 11:25:45.157 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 11:25:53.295 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 11:26:42.729 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 11:40:44.820 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 11:46:13.766 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 11:46:13.941 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 11:46:24.156 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 11:46:24.309 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 11:46:40.010 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 11:46:40.014 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[46m POST    [0m /v1/user/password/reset
+2019/09/19 11:48:56.433 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 11:48:59.668 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 11:49:01.767 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   2.0961667s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 12:38:04.235 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 12:38:05.814 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 12:38:06.744 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 12:38:08.298 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 12:38:14.931 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 12:38:16.123 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    1.187293s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 12:53:15.153 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 12:53:21.245 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     7.4868ms| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 12:53:22.318 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0682515s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 12:53:33.060 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 12:53:34.126 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0611655s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 12:55:53.140 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:03:04.922 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:03:11.862 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:03:11.867 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.2µs|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:04:55.218 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:04:55.400 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.7µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:05:08.812 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   148.7622ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 13:05:18.031 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   430.4011ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 13:08:06.933 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:08:16.116 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   134.8875ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/19 13:13:15.412 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:13:15.451 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9946ms|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:13:23.839 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:13:23.851 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.9µs|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:14:31.314 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:14:31.344 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.1µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:14:58.235 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:14:58.239 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.4µs|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:20:39.409 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:20:39.440 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:20:53.046 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:20:53.052 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.3µs|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:21:54.887 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:22:00.914 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:22:00.955 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:22:09.289 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:22:09.293 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.7µs|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:22:22.656 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:22:22.703 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.5µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:22:44.031 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:22:44.035 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:26:27.718 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:26:44.744 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:26:44.774 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.8µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:26:54.828 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:26:54.832 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:27:08.609 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:27:11.188 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.7µs| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:27:11.238 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.1µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:27:21.776 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:27:21.780 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:27:52.679 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:28:06.482 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:28:06.511 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.3µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:28:16.839 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:28:16.842 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:29:47.438 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:30:39.574 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:30:39.647 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.6µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:30:49.247 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:30:50.348 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0975542s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:33:04.142 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   130.3044ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 13:33:57.242 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:33:57.598 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:35:55.782 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0119ms|   match|[44m GET     [0m /v1/user/password/recover/apinaend@gmail.com   r:/v1/user/password/recover/:email
+2019/09/19 13:36:39.756 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      965.6µs|   match|[44m GET     [0m /v1/user/password/recover/apinaend@gmail.com   r:/v1/user/password/recover/:email
+2019/09/19 13:37:31.191 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user/password/recover/apinend@gmail.com   r:/v1/user/password/recover/:email
+2019/09/19 13:38:34.984 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user/password/recover/apinaen@gmail.com   r:/v1/user/password/recover/:email
+2019/09/19 13:39:14.991 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/19 13:39:20.590 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   111.5024ms|   match|[44m GET     [0m /v1/user/password/recover/apinaendy@gmail.com   r:/v1/user/password/recover/:email
+2019/09/19 13:40:02.977 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/19 13:40:03.008 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/19 13:40:25.267 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/19 13:40:26.561 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.2904652s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/19 13:42:23.930 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0806462s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 13:56:23.288 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0783694s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 14:50:14.229 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.2390372s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 16:12:08.264 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.3390246s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 16:22:32.853 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0826247s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 16:27:05.568 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.5318087s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/19 16:40:29.664 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0877634s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/23 17:51:55.544 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 17:52:50.008 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.3472257s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/23 17:52:59.020 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.6168674s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/23 19:09:05.243 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:09:06.783 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:09:08.152 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:09:09.613 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:09:11.098 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:09:12.296 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:09:13.557 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:09:15.096 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:11:10.771 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:18:08.749 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:19:46.346 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:23:56.080 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:24:11.331 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:32:25.750 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:41:41.618 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:47:01.906 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:48:10.573 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:48:23.482 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:55:14.198 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:56:11.574 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:56:53.243 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:57:20.548 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:57:59.096 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:58:28.425 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 19:59:21.834 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:00:44.728 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:01:55.824 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:04:31.388 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:05:33.353 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:14:03.668 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:18:16.145 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:19:00.561 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:19:05.256 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:20:21.498 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:20:58.136 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:21:08.119 [D] [server.go:2774]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /utility/subsidiary/
+2019/09/23 20:21:08.211 [D] [server.go:2774]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /favicon.ico
+2019/09/23 20:21:16.470 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[44m GET     [0m /v1/utility/subsidiary/
+2019/09/23 20:21:30.239 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:21:31.810 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.3µs| nomatch|[44m GET     [0m /v1/utility/subsidiary/
+2019/09/23 20:21:31.865 [D] [server.go:2774]  |            ::1|[43m 404 [0m|      996.8µs| nomatch|[44m GET     [0m /favicon.ico
+2019/09/23 20:21:33.909 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:21:33.935 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0215ms|   match|[44m GET     [0m /v1/utility/subsidiary/   r:/v1/utility/subsidiary/
+2019/09/23 20:21:33.968 [D] [server.go:2774]  |            ::1|[43m 404 [0m|     1.0028ms| nomatch|[44m GET     [0m /favicon.ico
+2019/09/23 20:23:21.801 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:23:54.321 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:24:12.894 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:24:18.207 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      977.4µs|   match|[44m GET     [0m /v1/utility/departments/   r:/v1/utility/departments/
+2019/09/23 20:33:14.723 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:33:36.001 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:33:45.477 [D] [server.go:2774]  |            ::1|[43m 404 [0m|       31.9µs| nomatch|[44m GET     [0m /v1/utility/departments/3
+2019/09/23 20:33:57.362 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      975.9µs|   match|[44m GET     [0m /swagger/
+2019/09/23 20:33:57.396 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     3.9953ms|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/23 20:33:57.403 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     10.967ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/09/23 20:33:57.404 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    10.9677ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/09/23 20:33:58.168 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      992.5µs|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/23 20:33:58.314 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.4µs|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/23 20:34:00.087 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /swagger/
+2019/09/23 20:34:00.106 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/23 20:34:00.107 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0153ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/09/23 20:34:00.107 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9916ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/09/23 20:34:00.379 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/23 20:34:00.384 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/23 20:34:01.542 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.6µs|   match|[44m GET     [0m /swagger/
+2019/09/23 20:34:01.559 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      976.1µs|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/23 20:34:01.559 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      976.1µs|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/09/23 20:34:01.560 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9714ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/09/23 20:34:01.829 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/23 20:34:01.835 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/23 20:34:49.543 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.5µs|   match|[44m GET     [0m /swagger/
+2019/09/23 20:34:49.570 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/09/23 20:34:49.571 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.1µs|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/09/23 20:34:49.572 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9961ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/09/23 20:34:50.008 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      994.2µs|   match|[44m GET     [0m /swagger/swagger.json
+2019/09/23 20:34:50.021 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/09/23 20:34:52.022 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/23 20:34:53.565 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    34.9398ms|   match|[44m GET     [0m /v1/utility/departments/3   r:/v1/utility/departments/:subsidiaryId
+2019/09/23 20:34:53.625 [D] [server.go:2774]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /favicon.ico
+2019/09/30 16:02:25.478 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/30 16:02:26.727 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/30 16:02:28.274 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/30 16:02:30.076 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/30 16:02:31.873 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/30 16:02:33.915 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/30 16:02:35.493 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/30 16:02:37.372 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/09/30 16:11:08.964 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.1058774s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/30 16:11:23.301 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   683.0586ms|   match|[44m GET     [0m /v1/user/password/recover/endy.apina@my-gpi.io   r:/v1/user/password/recover/:email
+2019/09/30 16:11:41.854 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.5µs| nomatch|[47m OPTIONS [0m /v1/validate/password/code
+2019/09/30 16:11:41.891 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.2µs|   match|[46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
+2019/09/30 16:12:04.303 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/password/reset
+2019/09/30 16:12:05.388 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0814297s|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/30 16:12:07.989 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.6µs|   match|[46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
+2019/09/30 16:12:55.846 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.3301148s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/30 16:14:51.882 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    1.095167s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/30 16:16:20.149 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   150.2059ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/30 16:16:27.989 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   180.2002ms|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/09/30 16:16:43.085 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0240621s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login

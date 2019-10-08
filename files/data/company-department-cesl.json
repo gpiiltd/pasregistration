@@ -1,0 +1,62 @@
+{
+    "subsidiary": "CESL",
+    "deparments": [
+        {
+            "name": "Human Resource"
+        },
+        {
+            "name": "Accounts/Finance"
+        },
+        {
+            "name": "Admin/Protocol"
+        },
+        {
+            "name": "Business Development"
+        },
+        {
+            "name": "Business Strategy"
+        }, 
+        {
+            "name": "Client and Government Relations"
+        },
+        {
+            "name": "CE's Office"
+        },
+        {
+            "name": "IT"
+        },
+        {
+            "name": "Corporate Affairs"
+        },
+        {
+            "name": "Internal Control Unit"
+        },
+        {
+            "name": "Legal"
+        },
+        {
+            "name": "Operations/Technical"
+        },
+        {
+            "name": "Procurement"
+        },
+        {
+            "name": "Shipping/Logistics"
+        },
+        {
+            "name": "HSE"
+        },
+        {
+            "name": "Security & Community Relations"
+        },
+        {
+            "name": "Supply Chains"
+        },
+        {
+            "name": "Logistics & WH OPs"
+        },
+        {
+            "name": "Faculty & Maintenance"
+        }
+    ]
+}

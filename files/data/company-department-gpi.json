@@ -1,0 +1,11 @@
+{
+    "subsidiary": "GPI",
+    "deparments": [
+        {
+            "name": "GPI Tech"
+        },
+        {
+            "name": "GPI Commercial"
+        }
+    ]
+}
