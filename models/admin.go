@@ -36,24 +36,22 @@ func GetTeamLeads() interface{} {
 	return ValidResponse(200, userArray, "success")
 }
 
-//GetAllTeamLead gets all front team leads in the system
-func GetAllTeamLead() interface{} {
-	var teamLeads []Roles
-	if getAll := Conn.Where("code = 66").Find(&teamLeads); getAll.Error != nil {
-		return ErrorResponse(401, "Unable to get front desk officers")
+//GetAllHROs gets all HR officer on the system
+func GetAllHROs() interface{} {
+	var allHRO []Roles
+	if getAll := Conn.Where("code = 77").Find(&allHRO); getAll.Error != nil {
+		return ErrorResponse(401, "Unable to all Team Lead")
 	}
 	var userArray []User
-	Conn.Find(&userArray)
-	var allTeamLeadArray []User
-
-	for _, user := range userArray {
-		for _, teamLead := range teamLeads {
-			if teamLead.UserID == user.ID {
-				allTeamLeadArray = append(allTeamLeadArray, user)
-			}
+	var u User
+	for _, role := range allHRO {
+		u.ID = role.UserID
+		if getUser := Conn.Where("id = ?", role.UserID).Find(&u); getUser.Error != nil {
+			return ErrorResponse(401, "Error get user information from role email")
 		}
+		userArray = append(userArray, u)
 	}
-	return ValidResponse(200, allTeamLeadArray, "success")
+	return ValidResponse(200, userArray, "success")
 }
 
 //AddFrontDeskOfficer adds a front desk user to the system
@@ -120,6 +118,40 @@ func DeleteTeamLeadOfficer(uid string) interface{} {
 	}
 	if deleteRole := Conn.Where("user_id = ?", uid).Delete(&Roles{}); deleteRole.Error != nil {
 		return ErrorResponse(401, "Unable to delete Team Lead record")
+	}
+	return ValidResponse(200, "Delete Successful", "success")
+}
+
+//AddHROfficer adds a new HR officer to the system
+func AddHROfficer(hrOfficer User) interface{} {
+	isAdmin := IsAdmin(hrOfficer)
+	if isAdmin == true {
+		return ErrorResponse(401, "User already has a classified role.")
+	}
+	var role Roles
+	role.Code = 77
+	role.Role = "HR Officer"
+	role.User = hrOfficer.FullName
+	role.UserID = hrOfficer.ID
+	if createRole := Conn.Create(&role); createRole.Error != nil {
+		return ErrorResponse(403, "Unable to add a HR Officer")
+	}
+	return ValidResponse(200, "Successfully added HR Officer", "success")
+}
+
+//DeleteHROfficer deletes an HR officer from the system
+func DeleteHROfficer(uid string) interface{} {
+	var HRO User
+	HRO, err := GetDataFromIDString(uid)
+	if err != nil {
+		return ErrorResponse(403, "User does not exist")
+	}
+	isHRO := IsHRO(HRO)
+	if isHRO == false {
+		return ErrorResponse(403, "User is not an HR Officer")
+	}
+	if deleteRole := Conn.Where("user_id = ?", uid).Delete(&Roles{}); deleteRole.Error != nil {
+		return ErrorResponse(401, "Unable to delete HR record")
 	}
 	return ValidResponse(200, "Delete Successful", "success")
 }

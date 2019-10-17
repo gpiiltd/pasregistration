@@ -104,6 +104,10 @@ func Filter(ctx *context.Context) bool {
 	if strings.HasPrefix(ctx.Input.URL(), "/v1/contact/") {
 		return true
 	}
+
+	if strings.HasPrefix(ctx.Input.URL(), "/v1/validate/user/role") {
+		return true
+	}
 	return false
 }
 
@@ -187,6 +191,24 @@ func (v *ValidateController) ValidateResetPasswordCode() {
 		return
 	}
 	v.Data["json"] = models.ValidateRecoveryCode(validationInfo)
+	v.ServeJSON()
+}
+
+//ValidateUserRole validates a user role.
+// @Title ValidateUserRole
+// @Description validates a user role and sends a true or false response depending on the validity
+// @Success 200 {object} models.ValidResponse
+// @Failure 403 body is empty
+// @router /user/role [POST]
+func (v *ValidateController) ValidateUserRole() {
+	var validationInfo models.ValidateRole
+	err := json.Unmarshal(v.Ctx.Input.RequestBody, &validationInfo)
+	if err != nil {
+		v.Data["json"] = models.ErrorResponse(405, "Method Not Allowed")
+		v.ServeJSON()
+		return
+	}
+	v.Data["json"] = models.ValidateUserRoles(validationInfo)
 	v.ServeJSON()
 }
 

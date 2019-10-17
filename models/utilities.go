@@ -365,6 +365,15 @@ func ValidateRecoveryCode(validationObject PasswordRecoveryData) interface{} {
 	return ErrorResponse(200, "Code Valid")
 }
 
+//ValidateUserRoles checks if a user code is valid.
+func ValidateUserRoles(validationObject ValidateRole) interface{} {
+	var role Roles
+	if validate := Conn.Where("user_id = ? AND code = ?", validationObject.UserID, validationObject.RoleCode).Find(&role); validate.Error != nil {
+		return ValidationResponse(200, false)
+	}
+	return ValidationResponse(200, true)
+}
+
 //ValidateTeamLeadUser checks if a user is a team lead
 func ValidateTeamLeadUser(user User) interface{} {
 	var role Roles
@@ -447,6 +456,24 @@ func IsFrontDesk(user User) bool {
 func IsTeamLead(user User) bool {
 	var teamLeadRole Roles
 	if getRole := Conn.Where("code = 66 AND user_id = ?", user.ID).Find(&teamLeadRole); getRole.Error != nil {
+		return false
+	}
+	return true
+}
+
+//IsAdmin checks if a user is an admin
+func IsAdmin(user User) bool {
+	var adminRole Roles
+	if getRole := Conn.Where("code = 99 AND user_id = ?", user.ID).Find(&adminRole); getRole.Error != nil {
+		return false
+	}
+	return true
+}
+
+//IsHRO checks if a user is an HRO
+func IsHRO(user User) bool {
+	var HRRole Roles
+	if getRole := Conn.Where("code = 77 AND user_id = ?", user.ID).Find(&HRRole); getRole.Error != nil {
 		return false
 	}
 	return true

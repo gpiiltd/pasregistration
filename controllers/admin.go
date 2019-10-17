@@ -101,3 +101,48 @@ func (a *AdminController) DeleteTeamLead() {
 	a.Data["json"] = models.DeleteTeamLeadOfficer(teamLeadID)
 	a.ServeJSON()
 }
+
+//AddNewHROfficer adds a new HR officer to the system
+// @Title AddNewHROfficer
+// @Description adds a new hr officer to the system
+// @Param	userid		path 	string	true		"the id of the user you want to make an HR officer"
+// @Success 200 {string} id of the user
+// @Failure 403 body is empty
+// @router /hro/:id [post]
+func (a *AdminController) AddNewHROfficer() {
+	var HRO models.User
+	HROID := a.GetString(":id")
+	HRO, err := models.GetDataFromIDString(HROID)
+	if err != nil {
+		a.Data["json"] = models.ErrorResponse(404, "Team Lead data does not exist")
+		a.ServeJSON()
+		return
+	}
+	updateHROfficer := models.AddHROfficer(HRO)
+	a.Data["json"] = updateHROfficer
+	a.ServeJSON()
+}
+
+//GetAllHRO gets all HR officers in the system
+// @Title GetAllHRO
+// @Description gets the list of all HR officers on the system
+// @Success 200 {object} []models.User
+// @Failure 403 body is empty
+// @router /hro/ [get]
+func (a *AdminController) GetAllHRO() {
+	a.Data["json"] = models.GetAllHROs()
+	a.ServeJSON()
+}
+
+//DeleteHRO deletes an HR officer
+// @Title DeleteHRO
+// @Description deletes an HRO using the user ID
+// @Param	userid		path 	string	true		"the id of the user you want to delete"
+// @Success 200 {string} id of the user
+// @Failure 403 body is empty
+// @router /hro/:id [delete]
+func (a *AdminController) DeleteHRO() {
+	HROID := a.GetString(":id")
+	a.Data["json"] = models.DeleteHROfficer(HROID)
+	a.ServeJSON()
+}

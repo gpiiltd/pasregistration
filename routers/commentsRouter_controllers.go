@@ -36,6 +36,33 @@ func init() {
 
     beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
         beego.ControllerComments{
+            Method: "GetAllHRO",
+            Router: `/hro/`,
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
+        beego.ControllerComments{
+            Method: "AddNewHROfficer",
+            Router: `/hro/:id`,
+            AllowHTTPMethods: []string{"post"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
+        beego.ControllerComments{
+            Method: "DeleteHRO",
+            Router: `/hro/:id`,
+            AllowHTTPMethods: []string{"delete"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
+        beego.ControllerComments{
             Method: "GetAllTeamLead",
             Router: `/teamlead/`,
             AllowHTTPMethods: []string{"get"},
@@ -201,6 +228,15 @@ func init() {
             Method: "ValidateTeamLead",
             Router: `/teamlead/`,
             AllowHTTPMethods: []string{"GET"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["pasregistration/controllers:ValidateController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:ValidateController"],
+        beego.ControllerComments{
+            Method: "ValidateUserRole",
+            Router: `/user/role`,
+            AllowHTTPMethods: []string{"POST"},
             MethodParams: param.Make(),
             Filters: nil,
             Params: nil})

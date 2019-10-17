@@ -59,6 +59,54 @@ paths:
           description: '{string} id of the user'
         "403":
           description: body is empty
+  /admin/hro/:
+    get:
+      tags:
+      - admin
+      description: gets the list of all HR officers on the system
+      operationId: AdminController.GetAllHRO
+      responses:
+        "200":
+          description: ""
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/models.User'
+        "403":
+          description: body is empty
+  /admin/hro/{id}:
+    post:
+      tags:
+      - admin
+      description: adds a new hr officer to the system
+      operationId: AdminController.AddNewHROfficer
+      parameters:
+      - in: path
+        name: userid
+        description: the id of the user you want to make an HR officer
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} id of the user'
+        "403":
+          description: body is empty
+    delete:
+      tags:
+      - admin
+      description: deletes an HRO using the user ID
+      operationId: AdminController.DeleteHRO
+      parameters:
+      - in: path
+        name: userid
+        description: the id of the user you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} id of the user'
+        "403":
+          description: body is empty
   /admin/teamlead/:
     get:
       tags:
@@ -348,6 +396,20 @@ paths:
       description: validates a user to see if he is a team lead. Returns true or false
         response
       operationId: ValidateController.ValidateTeamLead
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ValidResponse'
+        "403":
+          description: body is empty
+  /validate/user/role:
+    post:
+      tags:
+      - validate
+      description: validates a user role and sends a true or false response depending
+        on the validity
+      operationId: ValidateController.ValidateUserRole
       responses:
         "200":
           description: ""

@@ -91,3 +91,9 @@ type ResetPasswordData struct {
 	Code     string `json:"code"`
 	Password string `json:"password"`
 }
+
+//ValidateRole holds data needed to validate a user role
+type ValidateRole struct {
+	UserID   uint64 `json:"user_id"`
+	RoleCode uint64 `json:"role_code"`
+}
