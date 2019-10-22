@@ -1,0 +1,326 @@
+2019/10/22 00:02:35.883 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   3.7561605s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/10/22 00:02:40.568 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:02:40.577 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0565ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:03:57.530 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:03:57.539 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      1.502ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:04:09.791 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:04:09.799 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.2306ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:04:12.677 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        999µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:07:19.781 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      861.6µs| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:07:19.789 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.3312ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:08:04.408 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:08:04.418 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.3474ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:09:08.702 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:09:08.709 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:27:37.629 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:27:37.634 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0261ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:27:59.956 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:27:59.963 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.2507ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:28:13.432 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:28:13.439 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      966.5µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:28:25.796 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      192.9µs| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:28:25.801 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0077ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:33:43.526 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:33:43.533 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:33:45.252 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.2201ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:34:20.270 [D] [server.go:2774]  |            ::1|[42m 200 [0m|       91.2µs| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:34:20.277 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.1µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:34:22.203 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        286µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:35:43.327 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 00:35:43.337 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.3446ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 00:38:19.806 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 00:38:22.414 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 00:38:25.793 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 00:38:28.437 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 00:38:31.399 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 00:38:33.883 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 00:38:36.373 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 00:38:39.114 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 00:38:41.680 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 08:41:29.947 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     5.9836ms| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 08:41:29.960 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     6.9806ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 08:41:43.407 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 08:41:43.411 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 08:42:03.388 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 08:42:03.393 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      1.994ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 08:42:20.142 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 08:42:20.146 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 08:44:09.904 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 08:44:09.912 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 08:44:29.453 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 08:44:29.457 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        998µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 08:53:37.223 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 08:53:37.227 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.2µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 08:53:46.106 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 08:53:46.253 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   144.6865ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 10:21:42.289 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 10:21:42.294 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.2µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 10:22:09.858 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.9µs| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 10:22:09.861 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 10:22:37.419 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 10:22:37.424 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.6µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 10:27:45.661 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 10:27:45.666 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 10:29:19.489 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 10:29:19.493 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 10:29:50.752 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 10:29:50.757 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.6µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 10:30:21.067 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 10:30:21.072 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9965ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 10:35:14.302 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.4µs| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 10:35:14.306 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:23:55.077 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:23:55.082 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.9µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:31:58.673 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:31:58.678 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:32:32.784 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:32:32.789 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        998µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:32:49.267 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.2µs| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:32:49.271 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      994.9µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:33:28.468 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:33:28.478 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:57:09.119 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:57:09.125 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        995µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:57:28.927 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:57:28.932 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:57:47.521 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/team/First
+2019/10/22 11:57:47.556 [D] [server.go:2774]  |            ::1|[43m 404 [0m|    30.2069ms| nomatch|[46m POST    [0m /v1/team/First
+2019/10/22 11:57:52.887 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:57:52.892 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:58:20.744 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/team/First
+2019/10/22 11:58:20.749 [D] [server.go:2774]  |            ::1|[43m 404 [0m|      997.9µs| nomatch|[46m POST    [0m /v1/team/First
+2019/10/22 11:58:33.765 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:58:33.773 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.0275ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 11:59:20.005 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 11:59:20.009 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:00:03.155 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:00:03.159 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.5µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:01:45.543 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:01:45.549 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:02:10.846 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:02:10.851 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.5µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:03:09.145 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:03:09.150 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:08:20.767 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:08:20.772 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:08:26.424 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:08:26.429 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:08:57.520 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:08:57.532 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     8.9655ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:09:37.922 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:09:37.932 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.6µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:10:07.070 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    1.146519s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/10/22 12:10:07.259 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:10:07.263 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:10:07.273 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     5.9836ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:10:11.055 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        997µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:10:12.718 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:10:12.721 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:11:00.498 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:11:00.504 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.5µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:11:00.510 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:11:38.764 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:11:38.771 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9943ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:11:38.781 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        997µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:12:36.940 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:12:36.944 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      994.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:12:36.951 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:13:15.535 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:13:15.541 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.2µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:13:15.547 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:13:22.188 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:13:22.192 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.2µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:13:22.198 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.5µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:17:28.010 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:17:28.014 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:17:28.026 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     6.1999ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:22:27.956 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:22:27.963 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        945µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:22:27.972 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.2µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:22:38.203 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:22:38.209 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:22:38.218 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      647.4µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:22:56.723 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:22:56.728 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0028ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:22:56.736 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:23:18.995 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:23:18.999 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      994.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:23:19.007 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:24:10.150 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:24:10.156 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        998µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:24:10.165 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      1.002ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:25:01.529 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:25:01.629 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    95.9029ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:25:01.635 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      270.1µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:25:04.555 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:25:04.562 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.2µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:25:04.568 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:25:34.091 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:25:34.096 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.5µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:25:34.102 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      994.6µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:26:00.783 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:26:00.788 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:26:00.796 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:29:48.229 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:29:48.233 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:29:48.240 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.8µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:30:00.837 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:30:00.841 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.5µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:30:00.844 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:30:33.709 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   2.0081241s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/10/22 12:30:33.874 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:30:33.878 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:30:43.708 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:30:43.712 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:30:47.154 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:30:47.158 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:34:18.271 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.4512193s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/10/22 12:34:43.653 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.0603416s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/10/22 12:34:43.810 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:34:43.813 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:34:56.790 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:34:56.795 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      1.028ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:35:30.073 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:35:30.076 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:35:30.080 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:37:30.558 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0143ms| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:37:30.568 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:37:30.575 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.6µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:38:54.771 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   3.0342644s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/10/22 12:38:55.194 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:38:55.197 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:39:04.217 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:39:04.220 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      973.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:54:47.754 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 12:54:47.759 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 12:54:47.769 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 12:54:47.978 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user/
+2019/10/22 12:54:48.112 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    96.1278ms|   match|[44m GET     [0m /v1/user/   r:/v1/user/
+2019/10/22 14:58:12.863 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 14:58:12.869 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.7µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 14:58:12.877 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:11:27.203 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:11:27.209 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:11:27.216 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.1µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:12:16.384 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:12:16.388 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.6µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:12:16.395 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:12:50.270 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:12:50.276 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        997µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:12:50.282 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:13:40.696 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:13:40.701 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:13:40.709 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0004ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:14:08.593 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:14:08.596 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:14:08.603 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      989.4µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:18:38.490 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:18:38.498 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.0129ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:18:38.506 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0234ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:20:10.434 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:20:10.439 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.6µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:20:10.446 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:21:01.216 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:21:01.222 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:21:01.234 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:21:40.471 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:21:40.478 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      974.1µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:21:40.484 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:23:25.910 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:23:25.917 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        975µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:23:25.923 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:24:04.898 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:24:04.903 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:24:04.910 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0106ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:25:25.129 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:25:25.134 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        996µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:25:25.141 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9963ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:26:00.515 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:26:00.520 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.1µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:26:00.526 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.8µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:30:31.023 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:30:31.026 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:30:31.033 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:36:43.578 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:36:43.581 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:36:50.796 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:36:50.801 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:36:50.808 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:36:53.321 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:36:53.324 [D] [server.go:2774]  |            ::1|[42m 200 [0m|       1.01ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:37:00.513 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:37:00.515 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:37:54.600 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.1118378s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/10/22 15:38:08.719 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:38:08.821 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   100.0434ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:39:23.570 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:39:23.574 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:39:34.135 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:39:34.139 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:41:03.485 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:41:03.490 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:41:03.497 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:43:50.354 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:43:50.464 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    106.017ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:43:50.471 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:46:08.836 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:46:08.843 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:46:08.851 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:46:10.019 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:46:10.024 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:46:10.031 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.1µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:49:19.358 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:49:19.362 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      994.5µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:49:19.371 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.9µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:50:59.093 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:50:59.097 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:50:59.106 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.2µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:51:24.363 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:51:24.367 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.5µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:51:24.374 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0215ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:51:46.853 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:51:46.858 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.2µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:51:46.866 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        999µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:51:56.165 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:51:56.169 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:51:56.180 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        995µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:52:48.632 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:52:48.637 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:52:48.646 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:55:10.047 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:55:10.051 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:55:10.059 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      994.6µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:56:40.829 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:56:40.833 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:56:40.840 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.8µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 15:56:55.732 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 15:56:55.736 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 15:56:55.743 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 16:29:52.888 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/10/22 17:00:40.506 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:00:40.511 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0282ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:00:40.522 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.9925ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 17:04:04.203 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:04:04.208 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:04:04.215 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 17:05:39.650 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:05:39.655 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.6µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:05:39.663 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 17:05:57.723 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:05:57.727 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:05:57.735 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 17:06:24.229 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:06:24.234 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.1µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:06:24.241 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 17:18:59.606 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:18:59.610 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:18:59.616 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 17:19:25.784 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:19:25.788 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:19:25.797 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.0003ms|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 17:19:35.919 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:19:35.924 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.1µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:19:35.930 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png
+2019/10/22 17:19:46.761 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/10/22 17:19:46.766 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      987.8µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/10/22 17:19:46.773 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /files/uploads/images/20191003085828-apinaendy@gmail.com-1_CO20-3P183ZAqrsJlF7n_A.png

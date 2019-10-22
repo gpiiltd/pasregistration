@@ -344,7 +344,7 @@ func GetAllUsersFromDepartment(departmentID string) interface{} {
 //GetAllUsers gets a list of all users on the system
 func GetAllUsers() []User {
 	var users []User
-	if getAllUsers := Conn.Find(&users); getAllUsers.Error != nil {
+	if getAllUsers := Conn.Order("full_name").Find(&users); getAllUsers.Error != nil {
 		return nil
 	}
 	return users
