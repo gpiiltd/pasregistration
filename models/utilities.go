@@ -46,8 +46,11 @@ func SetupTables() {
 	Conn.AutoMigrate(&AttemptedLogin{})
 	Conn.AutoMigrate(&Roles{})
 	Conn.AutoMigrate(&PasswordRecoveryData{})
-	// SetupSubsidiaries()
-	// SetupDepartments()
+	go SetupSubsidiaries()
+	if findDepartment := Conn.Find(&Departments{}); findDepartment.Error != nil {
+		SetupDepartments()
+		SetupGPI()
+	}
 }
 
 //SetupSubsidiaries sets up the subsidiary of companies using the csv in the app
@@ -77,8 +80,8 @@ func SetupSubsidiaries() {
 		for _, tempSub := range tempSubsid {
 			allSubsidiary.ID++
 			allSubsidiary.Subsidiary = tempSub.Subsidiary
-			log.Println(allSubsidiary)
-			// Conn.Create(&allSubsidiary)
+			// log.Println(allSubsidiary)
+			Conn.Create(&allSubsidiary)
 		}
 	}
 }
@@ -93,8 +96,7 @@ func SetupDepartments() {
 		Department []department `json:"deparments"`
 	}
 	var subsidiaryArray subsidiaries
-	// companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-cesl.json")
-	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-gpi.json")
+	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-cesl.json")
 	err := json.Unmarshal(companyDataFile, &subsidiaryArray)
 	if err != nil {
 		log.Println(err.Error())
@@ -107,7 +109,7 @@ func SetupDepartments() {
 	Conn.Last(&tempDepartmentData)
 	var departments Departments
 	for _, subsidiary := range allSubsidiaries {
-		if subsidiary.Subsidiary == "GPI" {
+		if subsidiary.Subsidiary == "CESL" {
 			departments.ID = tempDepartmentData.ID
 			for _, dept := range departmentArray {
 				departments.ID = departments.ID + 1
@@ -115,7 +117,45 @@ func SetupDepartments() {
 				departments.SubsidiaryID = subsidiary.ID
 				departments.Department = dept.Name
 				Conn.Create(departments)
-				log.Println(departments)
+				// log.Println(departments)
+			}
+		}
+	}
+}
+
+//SetupGPI sets up GPI
+func SetupGPI() {
+	type department struct {
+		Name string `json:"name"`
+	}
+	type subsidiaries struct {
+		Subsidiary string       `json:"subsidiary"`
+		Department []department `json:"deparments"`
+	}
+	var subsidiaryArray subsidiaries
+	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-gpi.json")
+	err := json.Unmarshal(companyDataFile, &subsidiaryArray)
+	if err != nil {
+		log.Println(err.Error())
+	}
+	departmentArray := subsidiaryArray.Department
+	var allSubsidiaries []Subsidiaries
+	Conn.Find(&allSubsidiaries)
+	log.Println(allSubsidiaries)
+	var tempDepartmentData Departments
+	var departments Departments
+	for _, subsidiary := range allSubsidiaries {
+		if subsidiary.Subsidiary == "GPI" {
+			Conn.Last(&tempDepartmentData)
+			log.Println(tempDepartmentData)
+			departments.ID = tempDepartmentData.ID
+			for _, dept := range departmentArray {
+				departments.ID = departments.ID + 1
+				departments.Subsidiary = subsidiary.Subsidiary
+				departments.SubsidiaryID = subsidiary.ID
+				departments.Department = dept.Name
+				Conn.Create(departments)
+				// log.Println(departments)
 			}
 		}
 	}

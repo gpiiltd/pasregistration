@@ -61,6 +61,7 @@ func AddFrontDeskOfficer(frontDesk User) interface{} {
 		return ErrorResponse(401, "User already a front desk officer")
 	}
 	var role Roles
+	Conn.Where("user_id = ? AND code = ?", frontDesk.ID, 88).Delete(&Roles{})
 	role.Code = 88
 	role.Role = "Front Desk Officer"
 	role.User = frontDesk.FullName
