@@ -155,6 +155,38 @@ paths:
           description: '{string} id of the user'
         "403":
           description: body is empty
+  /admin/vmsadmin/:
+    get:
+      tags:
+      - admin
+      description: gets the list of all VMS admin officers on the system
+      operationId: AdminController.GetAllVMSAdmin
+      responses:
+        "200":
+          description: ""
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/models.User'
+        "403":
+          description: body is empty
+  /admin/vmsadmin/{id}:
+    post:
+      tags:
+      - admin
+      description: adds a new vms officer to the system
+      operationId: AdminController.AddVMSAdmin
+      parameters:
+      - in: path
+        name: userid
+        description: the id of the user you want to make a vms officer
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} id of the user'
+        "403":
+          description: body is empty
   /token/validate:
     get:
       tags:

@@ -156,3 +156,38 @@ func DeleteHROfficer(uid string) interface{} {
 	}
 	return ValidResponse(200, "Delete Successful", "success")
 }
+
+//AddVMSAdminOfficer adds a new vms admin to the system
+func AddVMSAdminOfficer(vmsAdmin User) interface{} {
+	isVMSAdmin := IsVMSAdmin(vmsAdmin)
+	if isVMSAdmin == true {
+		return ErrorResponse(401, "User cannot have more that 1 team")
+	}
+	var role Roles
+	role.Code = 44
+	role.Role = "VMS Admin"
+	role.User = vmsAdmin.FullName
+	role.UserID = vmsAdmin.ID
+	if createRole := Conn.Create(&role); createRole.Error != nil {
+		return ErrorResponse(403, "Unable to add vms admin")
+	}
+	return ValidResponse(200, "Successfully added team lead", "success")
+}
+
+//GetAllVMSAdmin gets all vms admin on the system
+func GetAllVMSAdmin() interface{} {
+	var allVMSAdmin []Roles
+	if getAll := Conn.Where("code = 44").Find(&allVMSAdmin); getAll.Error != nil {
+		return ErrorResponse(401, "Unable to get all vms Admin")
+	}
+	var userArray []User
+	var u User
+	for _, role := range allVMSAdmin {
+		u.ID = role.UserID
+		if getUser := Conn.Where("id = ?", role.UserID).Find(&u); getUser.Error != nil {
+			return ErrorResponse(401, "Error get user information from role email")
+		}
+		userArray = append(userArray, u)
+	}
+	return ValidResponse(200, userArray, "success")
+}

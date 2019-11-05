@@ -146,3 +146,35 @@ func (a *AdminController) DeleteHRO() {
 	a.Data["json"] = models.DeleteHROfficer(HROID)
 	a.ServeJSON()
 }
+
+//AddVMSAdmin adds a new VMS Admin to the system
+// @Title AddVMSAdmin
+// @Description adds a new vms officer to the system
+// @Param	userid		path 	string	true		"the id of the user you want to make a vms officer"
+// @Success 200 {string} id of the user
+// @Failure 403 body is empty
+// @router /vmsadmin/:id [post]
+func (a *AdminController) AddVMSAdmin() {
+	var VMSAdmin models.User
+	vmsAdminID := a.GetString(":id")
+	VMSAdmin, err := models.GetDataFromIDString(vmsAdminID)
+	if err != nil {
+		a.Data["json"] = models.ErrorResponse(404, "User data does not exist")
+		a.ServeJSON()
+		return
+	}
+	addVMSAdmin := models.AddVMSAdminOfficer(VMSAdmin)
+	a.Data["json"] = addVMSAdmin
+	a.ServeJSON()
+}
+
+//GetAllVMSAdmin gets all vms admin in the system
+// @Title GetAllVMSAdmin
+// @Description gets the list of all VMS admin officers on the system
+// @Success 200 {object} []models.User
+// @Failure 403 body is empty
+// @router /vmsadmin/ [get]
+func (a *AdminController) GetAllVMSAdmin() {
+	a.Data["json"] = models.GetAllVMSAdmin()
+	a.ServeJSON()
+}

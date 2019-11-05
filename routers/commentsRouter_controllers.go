@@ -88,6 +88,24 @@ func init() {
             Filters: nil,
             Params: nil})
 
+    beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
+        beego.ControllerComments{
+            Method: "GetAllVMSAdmin",
+            Router: `/vmsadmin/`,
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
+        beego.ControllerComments{
+            Method: "AddVMSAdmin",
+            Router: `/vmsadmin/:id`,
+            AllowHTTPMethods: []string{"post"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
     beego.GlobalControllerRouter["pasregistration/controllers:TokenController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:TokenController"],
         beego.ControllerComments{
             Method: "ValidateAttachedToken",

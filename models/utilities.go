@@ -48,8 +48,8 @@ func SetupTables() {
 	Conn.AutoMigrate(&PasswordRecoveryData{})
 	go SetupSubsidiaries()
 	if findDepartment := Conn.Find(&Departments{}); findDepartment.Error != nil {
-		SetupDepartments()
-		SetupGPI()
+		// SetupDepartments()
+		// SetupGPI()
 	}
 }
 
@@ -496,6 +496,15 @@ func IsFrontDesk(user User) bool {
 func IsTeamLead(user User) bool {
 	var teamLeadRole Roles
 	if getRole := Conn.Where("code = 66 AND user_id = ?", user.ID).Find(&teamLeadRole); getRole.Error != nil {
+		return false
+	}
+	return true
+}
+
+//IsVMSAdmin checks if a user is a vms admin
+func IsVMSAdmin(user User) bool {
+	var vmsAdminRole Roles
+	if getRole := Conn.Where("code = 44 AND user_id = ?", user.ID).Find(&vmsAdminRole); getRole.Error != nil {
 		return false
 	}
 	return true
