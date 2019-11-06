@@ -86,7 +86,7 @@ func SetupRole(u User) {
 	role.Code = u.Role
 	role.Role = GetRoleFromCode(u.Role)
 
-	if findRole := Conn.Where("code = ? AND user_id = ?").Find(&role); findRole.Error != nil {
+	if findRole := Conn.Where("code = ? AND user_id = ?", u.Role, u.ID).Find(&role); findRole.Error != nil {
 		Conn.Create(&role)
 	}
 
