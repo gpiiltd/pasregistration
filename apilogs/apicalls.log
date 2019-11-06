@@ -19,3 +19,242 @@
 2019/11/05 10:22:15.078 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.9947ms|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
 2019/11/05 10:22:15.079 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     3.9885ms|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
 2019/11/05 10:22:15.082 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        998µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 10:45:50.397 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 10:45:50.401 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0228ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 10:50:35.631 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 10:50:35.638 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.8µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 10:50:36.746 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/05 10:50:36.749 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/05 10:50:36.750 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.8µs| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/05 10:50:36.758 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 10:50:36.810 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/05 10:50:36.815 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.2µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/05 10:50:36.817 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.9948ms|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/05 10:50:36.818 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.6µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 10:50:43.695 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 10:50:43.698 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 10:50:45.544 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 10:50:45.550 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 10:50:47.333 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/05 10:50:47.334 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/05 10:50:47.335 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/05 10:50:47.343 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 10:50:47.409 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/05 10:50:47.410 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        994µs|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/05 10:50:47.411 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.5µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/05 10:50:47.419 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      1.978ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 10:52:58.738 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.3245589s|   match|[46m POST    [0m /v1/user/register   r:/v1/user/register
+2019/11/05 10:52:59.098 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 10:52:59.102 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0042ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:02:34.432 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/11/05 11:02:36.572 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/05 11:02:36.573 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/05 11:02:36.576 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/05 11:02:36.580 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 11:02:36.616 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.1µs|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/05 11:02:36.617 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/05 11:02:36.618 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9963ms|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/05 11:02:36.624 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9962ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:02:40.006 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 11:02:40.010 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:02:42.142 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.6µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:02:43.969 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0453ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:02:45.916 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 11:02:45.921 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:02:47.478 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.2µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:03:55.378 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 11:03:55.382 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:03:57.629 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0329ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:03:58.531 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0286ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:03:59.688 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/3
+2019/11/05 11:04:00.069 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   377.0892ms|   match|[46m POST    [0m /v1/admin/vmsadmin/3   r:/v1/admin/vmsadmin/:id
+2019/11/05 11:04:01.982 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/05 11:04:01.983 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/05 11:04:01.984 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/05 11:04:01.992 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 11:04:02.026 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.1µs|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/05 11:04:02.026 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/05 11:04:02.027 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.5µs|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/05 11:04:02.029 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:16:17.013 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/05 11:16:17.015 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/05 11:16:17.017 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/05 11:16:17.021 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 11:16:17.050 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9942ms|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/05 11:16:17.052 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.5µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/05 11:16:17.053 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9921ms|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/05 11:16:17.059 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     3.9973ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:16:22.642 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 11:16:22.647 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        998µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:23.512 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:24.590 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.3µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:25.497 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0314ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:27.288 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:29.779 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 11:16:29.784 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.6µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:30.623 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:31.583 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0324ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:33.929 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:35.258 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 11:16:35.263 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0276ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:36.355 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:43.542 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/05 11:16:43.546 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:16:44.935 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/05 11:18:43.730 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      965.4µs| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/05 11:18:43.731 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        998µs| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/05 11:18:43.731 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/05 11:18:43.739 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 11:18:43.769 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/05 11:18:43.771 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/05 11:18:43.772 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.0002ms|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/05 11:18:43.774 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9895ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:19:39.906 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.1269427s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/11/05 11:19:40.067 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:19:40.070 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:29:46.695 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:29:46.699 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:30:17.039 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:30:17.043 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:30:56.306 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:30:56.310 [D] [server.go:2774]  |            ::1|[42m 200 [0m|        999µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:31:24.834 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:31:24.838 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:32:11.212 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:32:11.218 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:33:37.885 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:33:37.889 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:38:46.251 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:38:46.256 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0211ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:38:47.672 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.6µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:38:47.837 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 11:38:47.866 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      999.6µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:40:10.596 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:40:10.601 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:40:10.770 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 11:40:10.802 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9942ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:40:11.995 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      1.014ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:40:12.098 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:40:13.307 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9953ms|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:40:13.451 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.9µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:40:34.245 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:40:34.251 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.4µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/05 11:40:34.423 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/05 11:40:34.465 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.3µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/05 11:40:47.176 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/05 11:40:47.180 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/06 11:11:42.374 [I] [asm_amd64.s:1337]  http server Running on http://:9909
+2019/11/06 11:11:42.375 [I] [asm_amd64.s:1337]  https server Running on https://:9905
+2019/11/06 11:11:42.377 [C] [asm_amd64.s:1337]  ListenAndServeTLS:  listen tcp :9905: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2019/11/06 11:12:00.956 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 11:12:46.384 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.3189672s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/11/06 11:18:43.522 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/06 11:18:43.525 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.3µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/06 13:16:08.895 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   1.8091337s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/11/06 13:16:12.667 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/token/validate
+2019/11/06 13:16:12.672 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2019/11/06 13:27:02.104 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:03.908 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:06.100 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:07.980 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:09.832 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:11.698 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:13.581 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:15.441 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:17.392 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:19.223 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:27:20.965 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 13:28:50.303 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/user/login   r:/v1/user/login
+2019/11/06 13:29:03.308 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/06 13:29:03.311 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/06 13:29:03.311 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/06 13:29:03.315 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/06 13:29:03.370 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.4µs|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/06 13:29:03.387 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.4µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/06 13:29:03.387 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.4µs|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/06 13:29:03.389 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      2.015ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/06 13:29:06.369 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 13:29:06.418 [D] [server.go:2774]  |            ::1|[42m 200 [0m|    44.8673ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 13:38:23.041 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 13:38:23.049 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 13:38:24.776 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/06 13:38:24.777 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/06 13:38:24.779 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/06 13:38:24.786 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/06 13:38:24.833 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      2.013ms|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/06 13:38:24.834 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      978.1µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/06 13:38:24.834 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9962ms|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/06 13:38:24.838 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.3µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/06 13:38:42.704 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/3
+2019/11/06 13:38:42.802 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     93.928ms|   match|[41m DELETE  [0m /v1/admin/frontdesk/3   r:/v1/admin/frontdesk/:id
+2019/11/06 13:38:44.088 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/06 13:38:44.089 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/06 13:38:44.089 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/06 13:38:44.103 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/06 13:38:44.157 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.5µs|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/06 13:38:44.158 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.1µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/06 13:38:44.158 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.1µs|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/06 13:38:44.162 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      1.995ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/06 14:02:51.149 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:02:51.157 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     2.0188ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:02:52.376 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:02:52.381 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:02:53.921 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:02:53.926 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      989.3µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:02:55.754 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:02:55.759 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.3µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:02:57.567 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:02:57.572 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.3µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:03:01.156 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:03:01.163 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0439ms|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:03:02.021 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:03:02.027 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.2µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:03:25.571 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:03:25.585 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.5µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:03:34.649 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/1
+2019/11/06 14:03:34.722 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     67.858ms|   match|[41m DELETE  [0m /v1/admin/frontdesk/1   r:/v1/admin/frontdesk/:id
+2019/11/06 14:03:41.104 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/06 14:03:41.109 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/06 14:03:41.109 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/06 14:03:41.117 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/06 14:03:41.188 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/06 14:03:41.190 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.0138ms|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/06 14:03:41.192 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.5µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/06 14:03:41.196 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/06 14:15:58.793 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:15:58.798 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      996.2µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:16:00.764 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/user
+2019/11/06 14:16:00.775 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.9µs|   match|[44m GET     [0m /v1/user   r:/v1/user/
+2019/11/06 14:16:02.079 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/1
+2019/11/06 14:16:02.236 [D] [server.go:2774]  |            ::1|[42m 200 [0m|   151.4032ms|   match|[46m POST    [0m /v1/admin/vmsadmin/1   r:/v1/admin/vmsadmin/:id
+2019/11/06 14:16:05.003 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/06 14:16:05.007 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/06 14:16:05.007 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/06 14:16:05.014 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/06 14:16:05.066 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/06 14:16:05.070 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/06 14:16:05.070 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/06 14:16:05.075 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     1.9968ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/06 15:04:43.356 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 15:04:49.726 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 15:07:34.744 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 15:07:55.478 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 15:08:17.778 [I] [asm_amd64.s:1337]  http server Running on http://:9905
+2019/11/06 15:08:48.105 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/06 15:08:48.105 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      984.8µs| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/06 15:08:48.105 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      984.8µs| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/06 15:08:48.113 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/06 15:08:48.196 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      998.4µs|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/06 15:08:48.197 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/06 15:08:48.202 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     3.9897ms|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/06 15:08:48.206 [D] [server.go:2774]  |            ::1|[42m 200 [0m|     8.9764ms|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/06 15:09:32.679 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/hro/
+2019/11/06 15:09:32.682 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/frontdesk/
+2019/11/06 15:09:32.682 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/teamlead/
+2019/11/06 15:09:32.688 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/
+2019/11/06 15:09:32.735 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.6µs|   match|[44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2019/11/06 15:09:32.736 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2019/11/06 15:09:32.736 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      997.7µs|   match|[44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2019/11/06 15:09:32.745 [D] [server.go:2774]  |            ::1|[42m 200 [0m|      995.8µs|   match|[44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2019/11/06 15:09:38.209 [D] [server.go:2774]  |            ::1|[42m 200 [0m|           0s| nomatch|[47m OPTIONS [0m /v1/admin/vmsadmin/1
+2019/11/06 15:09:38.215 [D] [server.go:2774]  |            ::1|[43m 404 [0m|           0s| nomatch|[41m DELETE  [0m /v1/admin/vmsadmin/1

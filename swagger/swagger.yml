@@ -187,6 +187,22 @@ paths:
           description: '{string} id of the user'
         "403":
           description: body is empty
+    delete:
+      tags:
+      - admin
+      description: deletes a vms admin using the user ID
+      operationId: AdminController.DeleteVMSAdmin
+      parameters:
+      - in: path
+        name: userid
+        description: the id of the user you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} id of the user'
+        "403":
+          description: body is empty
   /token/validate:
     get:
       tags:

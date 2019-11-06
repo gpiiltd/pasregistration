@@ -178,3 +178,16 @@ func (a *AdminController) GetAllVMSAdmin() {
 	a.Data["json"] = models.GetAllVMSAdmin()
 	a.ServeJSON()
 }
+
+//DeleteVMSAdmin deletes a vms admin
+// @Title DeleteVMSAdmin
+// @Description deletes a vms admin using the user ID
+// @Param	userid		path 	string	true		"the id of the user you want to delete"
+// @Success 200 {string} id of the user
+// @Failure 403 body is empty
+// @router /vmsadmin/:id [delete]
+func (a *AdminController) DeleteVMSAdmin() {
+	adminID := a.GetString(":id")
+	a.Data["json"] = models.DeletevmsAdmin(adminID)
+	a.ServeJSON()
+}

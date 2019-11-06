@@ -191,3 +191,20 @@ func GetAllVMSAdmin() interface{} {
 	}
 	return ValidResponse(200, userArray, "success")
 }
+
+//DeletevmsAdmin deletes a vms admin from the system
+func DeletevmsAdmin(uid string) interface{} {
+	var admin User
+	admin, err := GetDataFromIDString(uid)
+	if err != nil {
+		return ErrorResponse(403, "User does not exist")
+	}
+	isVMSAdmin := IsVMSAdmin(admin)
+	if isVMSAdmin == false {
+		return ErrorResponse(403, "User is not a an Admin")
+	}
+	if deleteRole := Conn.Where("user_id = ?", uid).Delete(&Roles{}); deleteRole.Error != nil {
+		return ErrorResponse(401, "Unable to delete Admin record")
+	}
+	return ValidResponse(200, "Delete Successful", "success")
+}
