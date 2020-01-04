@@ -31,3 +31,6 @@
 2020/01/04 10:27:44.570 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    1.66606ms|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
 2020/01/04 10:27:44.570 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   2.291952ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
 2020/01/04 10:27:44.572 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   3.257944ms|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/01/04 16:03:04.494 [I] [asm_amd64.s:1357]  http server Running on http://:9909
+2020/01/04 16:03:04.495 [I] [asm_amd64.s:1357]  https server Running on https://:9905
+2020/01/04 16:03:04.495 [C] [asm_amd64.s:1357]  ListenAndServeTLS:  open /etc/letsencrypt/live/my-gpitools.com/cert.pem: no such file or directory

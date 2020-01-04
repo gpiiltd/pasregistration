@@ -46,9 +46,10 @@ func SetupTables() {
 	Conn.AutoMigrate(&AttemptedLogin{})
 	Conn.AutoMigrate(&Roles{})
 	Conn.AutoMigrate(&PasswordRecoveryData{})
-	if findSubsidiaries := Conn.Find(&Subsidiaries{}); findSubsidiaries.Error != nil {
-		go SetupSubsidiaries()
-	}
+	// if findSubsidiaries := Conn.Find(&Subsidiaries{}); findSubsidiaries.Error != nil {
+	// 	go SetupSubsidiaries()
+	// }
+	go SetupSubsidiaries()
 	go SetupDepartments()
 }
 
@@ -95,7 +96,7 @@ func SetupDepartments() {
 		Department []department `json:"deparments"`
 	}
 	var subsidiaryArray subsidiaries
-	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-cesl.json")
+	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-ctes.json")
 	err := json.Unmarshal(companyDataFile, &subsidiaryArray)
 	if err != nil {
 		log.Println(err.Error())
@@ -107,7 +108,7 @@ func SetupDepartments() {
 	Conn.Last(&tempDepartmentData)
 	var departments Departments
 	for _, subsidiary := range allSubsidiaries {
-		if subsidiary.Subsidiary == "CESL" {
+		if subsidiary.Subsidiary == "CTES" {
 			departments.ID = tempDepartmentData.ID
 			for _, dept := range departmentArray {
 				departments.ID = departments.ID + 1
