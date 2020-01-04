@@ -1,0 +1,32 @@
+{
+    "subsidiary": "CTES",
+    "deparments": [
+        {
+            "name": "Administrative and Strategic Planning"
+        },
+        {
+            "name": "Business Development and Marketing"
+        },
+        {
+            "name": "Technical/Operations"
+        },
+        {
+            "name": "Finance and Accounts"
+        },
+        {
+            "name": "HSE"
+        }, 
+        {
+            "name": "Security"
+        },
+        {
+            "name": "Procurement and Supply Chain"
+        },
+        {
+            "name": "Transportation"
+        },
+        {
+            "name": "Property Management"
+        }
+    ]
+}

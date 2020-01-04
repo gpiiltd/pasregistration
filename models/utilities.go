@@ -46,11 +46,10 @@ func SetupTables() {
 	Conn.AutoMigrate(&AttemptedLogin{})
 	Conn.AutoMigrate(&Roles{})
 	Conn.AutoMigrate(&PasswordRecoveryData{})
-	go SetupSubsidiaries()
-	if findDepartment := Conn.Find(&Departments{}); findDepartment.Error != nil {
-		// SetupDepartments()
-		// SetupGPI()
+	if findSubsidiaries := Conn.Find(&Subsidiaries{}); findSubsidiaries.Error != nil {
+		go SetupSubsidiaries()
 	}
+	go SetupDepartments()
 }
 
 //SetupSubsidiaries sets up the subsidiary of companies using the csv in the app
@@ -104,7 +103,6 @@ func SetupDepartments() {
 	departmentArray := subsidiaryArray.Department
 	var allSubsidiaries []Subsidiaries
 	Conn.Find(&allSubsidiaries)
-	log.Println(allSubsidiaries)
 	var tempDepartmentData Departments
 	Conn.Last(&tempDepartmentData)
 	var departments Departments
@@ -133,7 +131,7 @@ func SetupGPI() {
 		Department []department `json:"deparments"`
 	}
 	var subsidiaryArray subsidiaries
-	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-gpi.json")
+	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-ctes.json")
 	err := json.Unmarshal(companyDataFile, &subsidiaryArray)
 	if err != nil {
 		log.Println(err.Error())
@@ -145,7 +143,7 @@ func SetupGPI() {
 	var tempDepartmentData Departments
 	var departments Departments
 	for _, subsidiary := range allSubsidiaries {
-		if subsidiary.Subsidiary == "GPI" {
+		if subsidiary.Subsidiary == "CTES" {
 			Conn.Last(&tempDepartmentData)
 			log.Println(tempDepartmentData)
 			departments.ID = tempDepartmentData.ID
