@@ -48,3 +48,5 @@
 2020/01/04 16:17:54.881 [I] [asm_amd64.s:1357]  http server Running on http://:9909
 2020/01/04 16:17:54.882 [I] [asm_amd64.s:1357]  https server Running on https://:9905
 2020/01/04 16:17:54.882 [C] [asm_amd64.s:1357]  ListenAndServeTLS:  open /etc/letsencrypt/live/my-gpitools.com/cert.pem: no such file or directory
+2020/01/04 16:19:46.840 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/04 16:19:54.169 [I] [asm_amd64.s:1357]  http server Running on http://:9905

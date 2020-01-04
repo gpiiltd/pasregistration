@@ -49,7 +49,9 @@ func SetupTables() {
 	if findSubsidiaries := Conn.Find(&Subsidiaries{}); findSubsidiaries.Error != nil {
 		go SetupSubsidiaries()
 	}
-	go SetupDepartments()
+	if findDepartments := Conn.Find(&Departments{}); findDepartments.Error != nil {
+		go SetupDepartments()
+	}
 }
 
 //SetupSubsidiaries sets up the subsidiary of companies using the csv in the app
