@@ -46,10 +46,9 @@ func SetupTables() {
 	Conn.AutoMigrate(&AttemptedLogin{})
 	Conn.AutoMigrate(&Roles{})
 	Conn.AutoMigrate(&PasswordRecoveryData{})
-	// if findSubsidiaries := Conn.Find(&Subsidiaries{}); findSubsidiaries.Error != nil {
-	// 	go SetupSubsidiaries()
-	// }
-	go SetupSubsidiaries()
+	if findSubsidiaries := Conn.Find(&Subsidiaries{}); findSubsidiaries.Error != nil {
+		go SetupSubsidiaries()
+	}
 	go SetupDepartments()
 }
 
@@ -96,7 +95,7 @@ func SetupDepartments() {
 		Department []department `json:"deparments"`
 	}
 	var subsidiaryArray subsidiaries
-	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-ctes.json")
+	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-gpi.json")
 	err := json.Unmarshal(companyDataFile, &subsidiaryArray)
 	if err != nil {
 		log.Println(err.Error())
@@ -108,45 +107,7 @@ func SetupDepartments() {
 	Conn.Last(&tempDepartmentData)
 	var departments Departments
 	for _, subsidiary := range allSubsidiaries {
-		if subsidiary.Subsidiary == "CTES" {
-			departments.ID = tempDepartmentData.ID
-			for _, dept := range departmentArray {
-				departments.ID = departments.ID + 1
-				departments.Subsidiary = subsidiary.Subsidiary
-				departments.SubsidiaryID = subsidiary.ID
-				departments.Department = dept.Name
-				Conn.Create(departments)
-				// log.Println(departments)
-			}
-		}
-	}
-}
-
-//SetupGPI sets up GPI
-func SetupGPI() {
-	type department struct {
-		Name string `json:"name"`
-	}
-	type subsidiaries struct {
-		Subsidiary string       `json:"subsidiary"`
-		Department []department `json:"deparments"`
-	}
-	var subsidiaryArray subsidiaries
-	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-ctes.json")
-	err := json.Unmarshal(companyDataFile, &subsidiaryArray)
-	if err != nil {
-		log.Println(err.Error())
-	}
-	departmentArray := subsidiaryArray.Department
-	var allSubsidiaries []Subsidiaries
-	Conn.Find(&allSubsidiaries)
-	log.Println(allSubsidiaries)
-	var tempDepartmentData Departments
-	var departments Departments
-	for _, subsidiary := range allSubsidiaries {
-		if subsidiary.Subsidiary == "CTES" {
-			Conn.Last(&tempDepartmentData)
-			log.Println(tempDepartmentData)
+		if subsidiary.Subsidiary == "GPI" {
 			departments.ID = tempDepartmentData.ID
 			for _, dept := range departmentArray {
 				departments.ID = departments.ID + 1
