@@ -18,6 +18,8 @@ type Data struct {
 	User      string
 	Email     string
 	Code      string
+	Role      string
+	Link      string
 	CreatedAt time.Time
 }
 

@@ -1,5 +1,11 @@
 package models
 
+import (
+	"pasregistration/controllers/mailer"
+
+	"github.com/astaxie/beego"
+)
+
 //GetAllFrontDeskOfficer gets all front desk officers in the system
 func GetAllFrontDeskOfficer() interface{} {
 	var frontDeskOfficers []Roles
@@ -137,7 +143,34 @@ func AddHROfficer(hrOfficer User) interface{} {
 	if createRole := Conn.Create(&role); createRole.Error != nil {
 		return ErrorResponse(403, "Unable to add a HR Officer")
 	}
+
+	var teamLead Roles
+	teamLead.Code = 66
+	teamLead.Role = "PAS Team Lead"
+	teamLead.User = hrOfficer.FullName
+	teamLead.UserID = hrOfficer.ID
+	if createRole := Conn.Create(&teamLead); createRole.Error != nil {
+		return ErrorResponse(403, "Unable to add a team lead")
+	}
+
+	go SendTeamLeadMail(hrOfficer)
+
 	return ValidResponse(200, "Successfully added HR Officer", "success")
+}
+
+//SendTeamLeadMail send email confirming users as the new Team Lead.
+func SendTeamLeadMail(u User) {
+	path := beego.AppConfig.String("mailtemplatepath") + "added-role.html"
+	mailSubject := "New Role Added"
+	newRequest := mailer.NewRequest(u.Email, mailSubject)
+	data := mailer.Data{}
+	data.User = u.FullName
+	data.Role = "a Team Lead"
+	data.Link = beego.AppConfig.String("loginpage")
+
+	go newRequest.Send(path, data)
+
+	return
 }
 
 //DeleteHROfficer deletes an HR officer from the system

@@ -1,8 +1,0 @@
-2019/12/25 09:55:51.646 [I] [asm_amd64.s:1357]  http server Running on http://:9905
-2019/12/25 09:56:34.417 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.865243604s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
-2019/12/25 09:56:42.681 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  3.23659926s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
-2019/12/25 09:56:42.903 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     99.815µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2019/12/25 09:56:42.908 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.661485ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2019/12/25 09:56:45.332 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    960.526µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2019/12/25 09:56:52.808 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      54.34µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2019/12/25 09:56:52.813 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.226249ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
