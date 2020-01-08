@@ -1,6 +1,8 @@
 package models
 
 import (
+	"encoding/json"
+	"net/http"
 	"pasregistration/controllers/mailer"
 
 	"github.com/astaxie/beego"
@@ -112,8 +114,14 @@ func DeleteFrontDeskOfficer(uid string) interface{} {
 	return ValidResponse(200, "Delete Successful", "success")
 }
 
+//ValidationResponseData holds data that needs a true or false response
+type ValidationResponseData struct {
+	Code int  `json:"code"`
+	Body bool `json:"body"`
+}
+
 //DeleteTeamLeadOfficer deletes team lead from the system
-func DeleteTeamLeadOfficer(uid string) interface{} {
+func DeleteTeamLeadOfficer(uid string, pasTokenString string) interface{} {
 	var teamLead User
 	teamLead, err := GetDataFromIDString(uid)
 	if err != nil {
@@ -123,7 +131,20 @@ func DeleteTeamLeadOfficer(uid string) interface{} {
 	if IsTeamLead == false {
 		return ErrorResponse(403, "User is not a Team Lead")
 	}
-	if deleteRole := Conn.Where("user_id = ?", uid).Delete(&Roles{}); deleteRole.Error != nil {
+	// roleCode := 66
+	client := &http.Client{}
+	req, _ := http.NewRequest("GET", beego.AppConfig.String("pasapi")+"team/verifi/"+uid, nil)
+	req.Header.Set("authorization", pasTokenString)
+	response, _ := client.Do(req)
+
+	var responseBody ValidationResponseData
+	json.NewDecoder(response.Body).Decode(&responseBody)
+
+	if responseBody.Body == true {
+		return ErrorResponse(403, "Team Lead currently has an active team. Delete team before deleting lead")
+	}
+	roleCode := 66
+	if deleteRole := Conn.Where("user_id = ? AND code = ?", uid, roleCode).Delete(&Roles{}); deleteRole.Error != nil {
 		return ErrorResponse(401, "Unable to delete Team Lead record")
 	}
 	return ValidResponse(200, "Delete Successful", "success")
@@ -184,8 +205,9 @@ func DeleteHROfficer(uid string) interface{} {
 	if isHRO == false {
 		return ErrorResponse(403, "User is not an HR Officer")
 	}
-	if deleteRole := Conn.Where("user_id = ?", uid).Delete(&Roles{}); deleteRole.Error != nil {
-		return ErrorResponse(401, "Unable to delete HR record")
+	roleCode := 77
+	if deleteRole := Conn.Where("user_id = ? AND code = ?", uid, roleCode).Delete(&Roles{}); deleteRole.Error != nil {
+		return ErrorResponse(401, deleteRole.Error.Error())
 	}
 	return ValidResponse(200, "Delete Successful", "success")
 }

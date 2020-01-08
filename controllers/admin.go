@@ -1,6 +1,8 @@
 package controllers
 
 import (
+	"encoding/json"
+	"log"
 	"pasregistration/models"
 
 	"github.com/astaxie/beego"
@@ -97,8 +99,17 @@ func (a *AdminController) AddNewTeamLead() {
 // @Failure 403 body is empty
 // @router /teamlead/:id [delete]
 func (a *AdminController) DeleteTeamLead() {
+	type pasStruct struct {
+		PasString string `json:"pastokenstring"`
+	}
+	var tokenString pasStruct
+	err := json.Unmarshal(a.Ctx.Input.RequestBody, &tokenString)
+	if err != nil {
+		log.Println(err.Error())
+		return
+	}
 	teamLeadID := a.GetString(":id")
-	a.Data["json"] = models.DeleteTeamLeadOfficer(teamLeadID)
+	a.Data["json"] = models.DeleteTeamLeadOfficer(teamLeadID, tokenString.PasString)
 	a.ServeJSON()
 }
 
