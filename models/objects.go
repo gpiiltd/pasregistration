@@ -16,6 +16,8 @@ type DBConfig struct {
 }
 
 func init() {
+	// go SetupOldDatabase()
+	// go StartMining()
 	SetupDatabase()
 }
 

@@ -52,6 +52,7 @@ func SetupTables() {
 	if findDepartments := Conn.Find(&Departments{}); findDepartments.Error != nil {
 		go SetupDepartments()
 	}
+	// go SetupDepartments()
 }
 
 //SetupSubsidiaries sets up the subsidiary of companies using the csv in the app
@@ -97,7 +98,7 @@ func SetupDepartments() {
 		Department []department `json:"deparments"`
 	}
 	var subsidiaryArray subsidiaries
-	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-cesl.json")
+	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-ctes.json")
 	err := json.Unmarshal(companyDataFile, &subsidiaryArray)
 	if err != nil {
 		log.Println(err.Error())
@@ -109,7 +110,7 @@ func SetupDepartments() {
 	Conn.Last(&tempDepartmentData)
 	var departments Departments
 	for _, subsidiary := range allSubsidiaries {
-		if subsidiary.Subsidiary == "CESL" {
+		if subsidiary.Subsidiary == "CTES" {
 			departments.ID = tempDepartmentData.ID
 			for _, dept := range departmentArray {
 				departments.ID = departments.ID + 1
