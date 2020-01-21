@@ -56,7 +56,19 @@
             "name": "Logistics & WH OPs"
         },
         {
-            "name": "Faculty & Maintenance"
+            "name": "Facility & Maintenance"
+        },
+        {
+            "name": "Management"
+        },
+        {
+            "name": "Client Relation"
+        },
+        {
+            "name": "Commercial"
+        },
+        {
+            "name": "Client and Government Relation"
         }
     ]
 }

@@ -84,7 +84,7 @@ func AddFrontDeskOfficer(frontDesk User) interface{} {
 func AddTeamLead(teamLead User) interface{} {
 	isTeamLead := IsTeamLead(teamLead)
 	if isTeamLead == true {
-		return ErrorResponse(401, "User cannot have more that 1 team")
+		return ErrorResponse(401, "User already a team Lead")
 	}
 	var role Roles
 	role.Code = 66

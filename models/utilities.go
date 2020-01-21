@@ -49,10 +49,32 @@ func SetupTables() {
 	if findSubsidiaries := Conn.Find(&Subsidiaries{}); findSubsidiaries.Error != nil {
 		go SetupSubsidiaries()
 	}
-	if findDepartments := Conn.Find(&Departments{}); findDepartments.Error != nil {
-		go SetupDepartments()
-	}
+	PrepareDepartment()
+	SetupOldDatabase()
+	// CreateTeamLead()
+	StartMining()
 	// go SetupDepartments()
+}
+
+//PrepareDepartment ready the system to create departments
+func PrepareDepartment() {
+	cesl := "CESL"
+	gpi := "GPI"
+	ctes := "CTES"
+	cepl := "CEPL"
+	templatePath := beego.AppConfig.String("companydatapath")
+	if findCESL := Conn.Where("subsidiary = ?", cesl).Find(&Departments{}); findCESL.Error != nil {
+		SetupDepartments(templatePath+"company-department-cesl.json", cesl)
+	}
+	if findGPI := Conn.Where("subsidiary = ?", gpi).Find(&Departments{}); findGPI.Error != nil {
+		SetupDepartments(templatePath+"company-department-gpi.json", gpi)
+	}
+	if findCTES := Conn.Where("subsidiary = ?", ctes).Find(&Departments{}); findCTES.Error != nil {
+		SetupDepartments(templatePath+"company-department-ctes.json", ctes)
+	}
+	if findCPTL := Conn.Where("subsidiary = ?", cepl).Find(&Departments{}); findCPTL.Error != nil {
+		SetupDepartments(templatePath+"company-department-cepl.json", cepl)
+	}
 }
 
 //SetupSubsidiaries sets up the subsidiary of companies using the csv in the app
@@ -89,7 +111,7 @@ func SetupSubsidiaries() {
 }
 
 //SetupDepartments sets up all the deparement in the system
-func SetupDepartments() {
+func SetupDepartments(filePath string, subsidiaryName string) {
 	type department struct {
 		Name string `json:"name"`
 	}
@@ -98,7 +120,7 @@ func SetupDepartments() {
 		Department []department `json:"deparments"`
 	}
 	var subsidiaryArray subsidiaries
-	companyDataFile, _ := ioutil.ReadFile(beego.AppConfig.String("companydatapath") + "company-department-ctes.json")
+	companyDataFile, _ := ioutil.ReadFile(filePath)
 	err := json.Unmarshal(companyDataFile, &subsidiaryArray)
 	if err != nil {
 		log.Println(err.Error())
@@ -110,7 +132,7 @@ func SetupDepartments() {
 	Conn.Last(&tempDepartmentData)
 	var departments Departments
 	for _, subsidiary := range allSubsidiaries {
-		if subsidiary.Subsidiary == "CTES" {
+		if subsidiary.Subsidiary == subsidiaryName {
 			departments.ID = tempDepartmentData.ID
 			for _, dept := range departmentArray {
 				departments.ID = departments.ID + 1

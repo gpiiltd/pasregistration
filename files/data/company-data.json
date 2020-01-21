@@ -105,6 +105,14 @@
                         "name": "Property Management"
                     }
                 ]
+            },
+            {
+                "subsidiary": "CEPL",
+                "deparments": [
+                    {
+                        "name": "CEPL"
+                    }
+                ]
             }
         ]
     }
