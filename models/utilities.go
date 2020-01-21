@@ -49,9 +49,9 @@ func SetupTables() {
 	if findSubsidiaries := Conn.Find(&Subsidiaries{}); findSubsidiaries.Error != nil {
 		go SetupSubsidiaries()
 	}
-	PrepareDepartment()
-	SetupOldDatabase()
-	CreateTeamLead()
+	// PrepareDepartment()
+	// SetupOldDatabase()
+	// CreateTeamLead()
 	// StartMining()
 	// go SetupDepartments()
 }
