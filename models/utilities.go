@@ -51,8 +51,8 @@ func SetupTables() {
 	}
 	PrepareDepartment()
 	SetupOldDatabase()
-	// CreateTeamLead()
-	StartMining()
+	CreateTeamLead()
+	// StartMining()
 	// go SetupDepartments()
 }
 
