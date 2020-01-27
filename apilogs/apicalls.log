@@ -162,3 +162,8 @@
 2020/01/23 12:56:48.246 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    594.998µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
 2020/01/23 12:57:55.013 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.045µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
 2020/01/23 12:57:55.016 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    688.474µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/01/27 10:36:48.120 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/27 10:46:38.940 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 3.207505775s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/01/27 10:46:39.732 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.846µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/01/27 10:46:39.734 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    616.781µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/01/27 10:46:41.764 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    793.816µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
