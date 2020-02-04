@@ -115,6 +115,15 @@ func init() {
             Filters: nil,
             Params: nil})
 
+    beego.GlobalControllerRouter["pasregistration/controllers:DepartmentController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:DepartmentController"],
+        beego.ControllerComments{
+            Method: "SetDepartmentHead",
+            Router: `/head/`,
+            AllowHTTPMethods: []string{"post"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
     beego.GlobalControllerRouter["pasregistration/controllers:TokenController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:TokenController"],
         beego.ControllerComments{
             Method: "ValidateAttachedToken",

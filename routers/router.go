@@ -46,6 +46,11 @@ func init() {
 				&controllers.AdminController{},
 			),
 		),
+		beego.NSNamespace("/department",
+			beego.NSInclude(
+				&controllers.DepartmentController{},
+			),
+		),
 	)
 	beego.AddNamespace(ns)
 	beego.SetStaticPath("/files", "files/")

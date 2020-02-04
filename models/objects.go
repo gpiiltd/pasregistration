@@ -36,10 +36,11 @@ type Subsidiaries struct {
 //Departments holds the list of deparments and subsidiaries belonging
 type Departments struct {
 	Model
-	Department   string `gorm:"varchar(100)" json:"department"`
-	Subsidiary   string `gorm:"varchar(100)" json:"subsidiary"`
-	SubsidiaryID uint64 `gorm:"int(10)" json:"subsidiary_id"`
-	Head         string `gorm:"varchar(10)" json:"head"`
+	Department   string `gorm:"type:varchar(100)" json:"department"`
+	Subsidiary   string `gorm:"type:varchar(100)" json:"subsidiary"`
+	SubsidiaryID uint64 `gorm:"type:int(10)" json:"subsidiary_id"`
+	Head         string `gorm:"type:varchar(10)" json:"head"`
+	HeadID       uint64 `gorm:"type:int(10)" json:"head_id"`
 }
 
 //User struct shows models for users
