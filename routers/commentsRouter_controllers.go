@@ -18,18 +18,18 @@ func init() {
 
     beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
         beego.ControllerComments{
-            Method: "AddFrontDeskOfficer",
+            Method: "DeleteFrontDeskOfficer",
             Router: `/frontdesk/:id`,
-            AllowHTTPMethods: []string{"post"},
+            AllowHTTPMethods: []string{"delete"},
             MethodParams: param.Make(),
             Filters: nil,
             Params: nil})
 
     beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
         beego.ControllerComments{
-            Method: "DeleteFrontDeskOfficer",
+            Method: "AddFrontDeskOfficer",
             Router: `/frontdesk/:id`,
-            AllowHTTPMethods: []string{"delete"},
+            AllowHTTPMethods: []string{"post"},
             MethodParams: param.Make(),
             Filters: nil,
             Params: nil})
@@ -57,6 +57,24 @@ func init() {
             Method: "DeleteHRO",
             Router: `/hro/:id`,
             AllowHTTPMethods: []string{"delete"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
+        beego.ControllerComments{
+            Method: "GetAllTaskAdmin",
+            Router: `/taskadmin/`,
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["pasregistration/controllers:AdminController"] = append(beego.GlobalControllerRouter["pasregistration/controllers:AdminController"],
+        beego.ControllerComments{
+            Method: "AddTaskAdmin",
+            Router: `/taskadmin/:userid`,
+            AllowHTTPMethods: []string{"post"},
             MethodParams: param.Make(),
             Filters: nil,
             Params: nil})

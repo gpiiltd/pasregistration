@@ -307,6 +307,34 @@
                 }
             }
         },
+        "/department/head/": {
+            "post": {
+                "tags": [
+                    "department"
+                ],
+                "description": "set department head.",
+                "operationId": "DepartmentController.SetDepartmentHead",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for user content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.Departments"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{int} models.ValidResponse"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
         "/token/validate": {
             "get": {
                 "tags": [
@@ -705,6 +733,45 @@
         }
     },
     "definitions": {
+        "models.Departments": {
+            "title": "Departments",
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "deleted_at": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "department": {
+                    "type": "string"
+                },
+                "head": {
+                    "type": "string"
+                },
+                "head_id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "subsidiary": {
+                    "type": "string"
+                },
+                "subsidiary_id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "format": "datetime"
+                }
+            }
+        },
         "models.Invitation": {
             "title": "Invitation",
             "type": "object"
@@ -831,6 +898,10 @@
         {
             "name": "admin",
             "description": "AdminController handles all functions that belongs explicitly to the admin\n"
+        },
+        {
+            "name": "department",
+            "description": "DepartmentController handles all data about departments\n"
         }
     ]
 }

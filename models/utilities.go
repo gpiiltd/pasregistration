@@ -38,6 +38,21 @@ func SetupDatabase() {
 	SetupTables()
 }
 
+//UserRoles holds all user role values
+var UserRoles RoleValues
+
+//SetupUserRole assigns values to user roles
+func SetupUserRole() {
+	var role RoleValues
+	role.FrontDeskOfficer = 88
+	role.PASTeamLead = 66
+	role.HROfficer = 77
+	role.VMSAdminOfficer = 44
+	role.TaskAdmin = 33
+
+	UserRoles = role
+}
+
 //SetupTables set up the database tables
 func SetupTables() {
 	Conn.AutoMigrate(&User{})
@@ -490,6 +505,15 @@ func IsTeamLead(user User) bool {
 func IsVMSAdmin(user User) bool {
 	var vmsAdminRole Roles
 	if getRole := Conn.Where("code = 44 AND user_id = ?", user.ID).Find(&vmsAdminRole); getRole.Error != nil {
+		return false
+	}
+	return true
+}
+
+//IsTaskAdmin checks if a user is a task admin
+func IsTaskAdmin(user User) bool {
+	var taskAdminRole Roles
+	if getRole := Conn.Where("code = ? AND user_id = ?", UserRoles.TaskAdmin, user.ID).Find(&taskAdminRole); getRole.Error != nil {
 		return false
 	}
 	return true

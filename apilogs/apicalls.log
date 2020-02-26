@@ -1,87 +1,770 @@
-2020/02/10 09:25:17.264 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     52.922µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 09:25:17.268 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    628.864µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 08:28:21.165 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.633µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 08:28:21.169 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    796.465µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:12:06.540 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     57.336µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 09:12:06.548 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.169978ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:12:10.019 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    874.584µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:22:37.491 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.069843373s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
-2020/02/10 09:22:37.670 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     39.701µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 09:22:37.674 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    929.881µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:22:42.526 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    973.567µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:22:52.377 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     77.112µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 09:22:52.384 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.450088ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:22:55.185 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    801.274µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:25:33.251 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 443.599374ms|   match|[97;44m GET     [0m /v1/user/password/recover/kemepade.sammy@ceslintlgroup.com   r:/v1/user/password/recover/:email
-2020/02/10 09:25:48.541 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 107.581318ms|   match|[97;44m GET     [0m /v1/user/password/recover/jennifer.daniel@my-gpi.io   r:/v1/user/password/recover/:email
-2020/02/10 09:30:52.489 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 163.006984ms|   match|[97;44m GET     [0m /v1/user/password/recover/kemepade.sammy@ceslintlgroup.com   r:/v1/user/password/recover/:email
-2020/02/10 09:31:24.156 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.606µs| nomatch|[90;47m OPTIONS [0m /v1/validate/password/code
-2020/02/10 09:31:24.161 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    661.955µs|   match|[97;46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
-2020/02/10 09:31:32.813 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     42.767µs| nomatch|[90;47m OPTIONS [0m /v1/user/password/reset
-2020/02/10 09:31:33.786 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 967.725019ms|   match|[97;46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
-2020/02/10 09:34:30.246 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      22.06µs| nomatch|[90;47m OPTIONS [0m /v1/validate/password/code
-2020/02/10 09:34:30.382 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    685.381µs|   match|[97;46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
-2020/02/10 09:34:59.236 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.097533117s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
-2020/02/10 09:34:59.419 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     40.886µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 09:34:59.425 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   2.804136ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:35:02.563 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    684.862µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:35:04.095 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    831.579µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:35:59.877 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     37.438µs| nomatch|[90;47m OPTIONS [0m /v1/validate/password/code
-2020/02/10 09:35:59.960 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    621.987µs|   match|[97;46m POST    [0m /v1/validate/password/code   r:/v1/validate/password/code
-2020/02/10 09:36:07.394 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      27.52µs| nomatch|[90;47m OPTIONS [0m /v1/user/password/reset
-2020/02/10 09:36:08.474 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.075876824s|   match|[97;46m POST    [0m /v1/user/password/reset   r:/v1/user/password/reset
-2020/02/10 09:36:35.970 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.943290436s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
-2020/02/10 09:36:36.182 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|       39.1µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 09:36:36.186 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    930.045µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:36:38.720 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.229357ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:36:40.296 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    979.869µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:45:32.429 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     47.813µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 09:45:32.432 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.288107ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 09:59:19.094 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     34.788µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 09:59:19.097 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    725.658µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:00:04.449 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     40.508µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:00:04.454 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    751.175µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:23:38.363 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.987µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:23:38.367 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    921.145µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:24:21.226 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     32.788µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:24:21.230 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     770.53µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:24:29.006 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.105µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:24:29.009 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    847.663µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:45:05.309 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    139.334µs| nomatch|[90;47m OPTIONS [0m /v1/user
-2020/02/10 10:45:05.351 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  12.757322ms|   match|[97;44m GET     [0m /v1/user   r:/v1/user/
-2020/02/10 10:45:10.619 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.847µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:45:10.622 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    729.856µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:45:22.366 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     32.275µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:45:22.369 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    614.165µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:45:29.201 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.534µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:45:29.203 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    729.655µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:45:46.679 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.312µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:45:46.682 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    791.537µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:46:15.237 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.333µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:46:15.240 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    650.212µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:46:25.599 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     62.253µs| nomatch|[90;47m OPTIONS [0m /v1/user
-2020/02/10 10:46:25.649 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  12.933827ms|   match|[97;44m GET     [0m /v1/user   r:/v1/user/
-2020/02/10 10:46:45.316 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.685µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:46:45.320 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     717.22µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:47:09.487 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.4572384s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
-2020/02/10 10:47:09.684 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.238µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:47:09.689 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      967.6µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:47:13.245 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    657.416µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:47:24.164 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.014µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:47:24.170 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.584289ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:47:45.625 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 195.650453ms|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
-2020/02/10 10:48:10.802 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.507713242s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
-2020/02/10 10:48:10.996 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     90.931µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:48:11.004 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    950.061µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:48:15.754 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    673.229µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:48:20.920 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     49.792µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:48:20.923 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    859.825µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:48:28.122 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      77.27µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:48:28.129 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.239565ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:48:44.249 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     34.036µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:48:44.252 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    711.058µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:48:54.088 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     39.054µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:48:54.091 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    613.973µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:48:56.587 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    495.397µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
-2020/02/10 10:52:11.883 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     24.775µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
-2020/02/10 10:52:11.891 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.302776ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:00:11.876 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     57.758µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:00:11.881 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.179226ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:02:30.280 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     48.666µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:02:30.286 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.249015ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:03:02.700 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     44.765µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:03:02.705 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.004444ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:03:11.613 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.354µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:03:11.618 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.128108ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:03:39.129 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      61.62µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:03:39.134 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.135228ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:07:41.354 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     70.613µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:07:41.359 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     1.3743ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:08:00.879 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     38.798µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:08:00.884 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    1.11551ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:11:00.094 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     65.132µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:11:00.099 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.259982ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 00:59:58.793 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     79.575µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 00:59:58.798 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.020138ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:13:18.142 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     44.141µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:13:18.147 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.136201ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:18:45.542 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.254µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:18:45.548 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.151316ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:19:22.709 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     39.254µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:19:22.715 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.271661ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:19:30.102 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     24.591µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:19:30.108 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.047107ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:20:39.829 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.227µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:20:39.835 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.246537ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:20:40.309 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.009438ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:20:41.315 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    944.625µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:20:41.811 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    1.20704ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:20:57.177 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.831µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:20:57.182 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    967.577µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:23:37.738 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.056µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:23:37.743 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.137916ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:26:10.378 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     45.089µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:26:10.383 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    1.09359ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:26:15.680 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     38.182µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:26:15.686 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.024391ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:26:19.092 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.437063ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:26:24.066 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     35.664µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:26:24.072 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.019989ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:26:37.239 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.175µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:26:37.244 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.068722ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:26:39.624 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.267284ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:26:43.402 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.862µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:26:43.407 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.022219ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:26:58.564 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.721µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:26:58.569 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    930.878µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:27:26.099 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     40.619µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:27:26.104 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    950.384µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:27:28.474 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.271022ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:34:28.005 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     84.556µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:34:28.010 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.021644ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:35:05.177 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     38.773µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:35:05.181 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.066546ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:35:58.103 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.314µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:35:58.109 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.262781ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:36:11.138 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     43.434µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:36:11.143 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    938.575µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:40:00.049 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.435µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:40:00.054 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.055771ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:40:48.044 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.424µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:40:48.049 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.273476ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:40:52.030 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    952.071µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 01:41:13.670 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.369µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 01:41:13.675 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    938.757µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 09:28:42.104 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     36.474µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 09:28:42.107 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    667.018µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 09:39:34.017 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     30.222µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 09:39:34.019 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    689.627µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 09:42:23.898 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.374µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 09:42:23.901 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    646.538µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 09:42:56.085 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.388µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 09:42:56.088 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    776.728µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 09:43:36.118 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      82.05µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 09:43:36.121 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    638.116µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 09:45:38.026 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.744µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 09:45:38.030 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    706.121µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 10:54:23.449 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     83.713µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 10:54:23.455 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.366516ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 10:54:47.674 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.647µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 10:54:47.679 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.123905ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:13:32.902 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    285.244µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:13:32.907 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.105572ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:16:35.754 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     34.924µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:16:35.759 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    969.119µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:17:15.840 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.466µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:17:15.845 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.144273ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:18:39.479 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     47.123µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:18:39.484 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.061889ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:18:47.180 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     60.211µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:18:47.185 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    977.899µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:19:19.120 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     63.112µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:19:19.126 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.368352ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:19:27.014 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     44.145µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:19:27.019 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.151959ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:44:22.166 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     66.698µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:44:22.172 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.195249ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:44:39.388 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.712µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:44:39.393 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    951.959µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:45:09.797 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    225.015µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:45:09.803 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.589055ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:45:39.301 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    193.498µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:45:39.307 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.144705ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:45:40.826 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.248822ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:46:18.676 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     24.534µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:46:18.682 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.796838ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:47:01.343 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.333µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:47:01.348 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    948.029µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:48:50.436 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     57.774µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:48:50.441 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.084302ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:50:02.322 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     67.688µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:50:02.333 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.315988ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:50:28.923 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     43.814µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:50:28.929 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.477007ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:51:10.573 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     30.577µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:51:10.578 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.174255ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 11:57:08.617 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     43.613µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 11:57:08.622 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    1.00989ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 12:45:26.802 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.043µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 12:45:26.804 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    703.042µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 13:32:27.562 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.742µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 13:32:27.564 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    610.423µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 13:32:36.409 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.791µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 13:32:36.411 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    671.414µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 13:39:22.315 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     33.499µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 13:39:22.318 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    702.257µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 13:42:44.182 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.648µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 13:42:44.185 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    655.602µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 13:44:32.385 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.961µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 13:44:32.388 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    614.109µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 13:54:38.510 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     43.257µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 13:54:38.513 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    717.735µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:01:44.252 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     45.126µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:01:44.255 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    637.351µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:03:10.868 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.241µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:03:10.870 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    670.452µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:03:54.190 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.929µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:03:54.193 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    766.775µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:04:09.824 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.226µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:04:09.827 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     605.45µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:05:50.038 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     14.952µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:05:50.042 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    777.171µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:06:06.402 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     30.965µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:06:06.406 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    962.124µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:07:48.303 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.324µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:07:48.306 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    727.254µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:09:00.442 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      16.58µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:09:00.445 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    779.779µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/19 14:47:55.604 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     65.986µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/19 14:47:55.607 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    910.333µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:13:00.790 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/20 13:13:58.868 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 2.273910423s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/20 13:14:00.088 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.558µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:14:00.091 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    747.353µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:14:02.241 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     640.66µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:19:28.923 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     36.531µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:19:28.925 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     625.76µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:19:38.075 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     32.854µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:19:38.078 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    646.847µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:20:16.957 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.864µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:20:16.960 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    616.876µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:20:27.255 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.882µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:20:27.257 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    811.012µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:20:35.513 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     34.518µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:20:35.515 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    525.657µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:30:04.873 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.417µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:30:04.876 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.388234ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:32:19.538 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      34.54µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:32:19.541 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    644.929µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:34:31.937 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     36.351µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:34:31.939 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    659.041µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:43:21.928 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     28.918µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:43:21.931 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    869.057µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:45:05.498 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      22.45µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:45:05.501 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    647.599µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:45:46.731 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.356µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:45:46.733 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    618.122µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:50:19.262 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.763µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:50:19.265 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    582.508µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:50:23.781 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    644.776µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:50:58.733 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     14.979µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:50:58.735 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    601.184µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:51:32.114 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      15.08µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:51:32.117 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     713.66µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:54:18.574 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      28.01µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:54:18.577 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    670.355µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:55:51.431 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.654µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:55:51.434 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    870.197µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:56:38.877 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.362µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:56:38.880 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    728.272µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:57:00.958 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.441µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:57:00.960 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|        583µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 13:57:21.306 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     28.676µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 13:57:21.309 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    627.764µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:00:47.671 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     24.004µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:00:47.674 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    766.242µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:00:52.463 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    961.536µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:01:00.862 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      15.98µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:01:00.864 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    559.111µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:01:28.412 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    119.173µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:01:28.416 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    830.506µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:02:10.678 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.316µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:02:10.681 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    618.832µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:02:19.162 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.701µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:02:19.165 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    572.886µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:17:39.367 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     30.764µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:17:39.370 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    800.617µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:21:03.950 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.935µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:21:03.953 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    687.816µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:21:32.557 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.691µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:21:32.560 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    578.556µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:24:02.952 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.103µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:24:02.955 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    1.00489ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:51:49.753 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     53.204µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:51:49.755 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    677.542µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:51:53.504 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     679.11µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:53:15.938 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.088µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:53:15.941 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    651.194µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:57:18.082 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.913µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:57:18.085 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    819.143µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 14:57:26.238 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     14.685µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 14:57:26.240 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    632.956µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:05:08.662 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     46.819µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:05:08.666 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    754.891µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:06:38.627 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.209µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:06:38.630 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    684.167µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:06:44.210 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.428µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:06:44.212 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    607.657µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:14:47.749 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.221µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:14:47.751 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    651.346µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:15:01.661 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    177.772µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:15:01.664 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    713.331µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:15:11.672 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     14.959µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:15:11.675 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    606.938µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:15:31.431 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.562µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:15:31.434 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    662.691µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:15:33.875 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    570.572µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:15:40.834 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.214µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:15:44.343 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    547.347µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:15:50.104 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      15.87µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:15:53.052 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    621.674µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:16:00.645 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.712µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:16:00.647 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     818.13µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:21:21.964 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      33.07µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:21:21.967 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    635.485µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:21:57.928 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.117µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:21:57.931 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    639.692µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:25:13.336 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.517µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:25:13.339 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    665.527µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:25:47.438 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     14.578µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:25:47.441 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    715.304µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:25:50.363 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    743.848µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:27:51.598 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     33.588µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:27:51.600 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    685.226µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:38:52.388 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     44.413µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:38:52.390 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    668.667µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:39:22.033 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.248µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:39:22.036 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     696.18µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:39:27.204 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.297µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:39:27.207 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    624.943µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:39:44.306 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.635µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:39:44.309 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    643.621µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:40:00.087 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    159.933µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:40:00.090 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    761.765µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:40:34.290 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.145µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:41:41.419 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      14.96µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:41:41.421 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|        599µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:48:56.913 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.191µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:48:56.915 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    653.427µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:49:15.622 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.791µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:49:15.625 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      612.6µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:49:22.769 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.289µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:49:22.772 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    672.208µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:52:33.609 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     28.527µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:52:33.612 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    689.914µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:52:37.093 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    732.666µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:53:19.760 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.406µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:53:19.763 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    638.383µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:54:43.881 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.538µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:54:43.884 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    704.232µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 15:55:23.314 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.403µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 15:55:23.317 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    656.408µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:00:50.716 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     43.902µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:00:50.718 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    862.919µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:01:41.553 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.985µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:01:41.556 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     710.53µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:02:12.206 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.826µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:02:12.209 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    652.044µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:32:14.116 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     42.515µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:32:14.119 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     705.98µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:33:36.430 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.271µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:33:36.433 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    628.003µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:38:00.329 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      19.79µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:38:00.332 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    734.386µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:38:38.347 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     32.914µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:38:38.350 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    657.244µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:41:06.055 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     60.425µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:41:06.057 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     770.22µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:41:45.557 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.506µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:41:45.559 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    564.676µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:44:17.105 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.023µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:44:17.108 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    640.407µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:44:27.324 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      25.65µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:44:27.327 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    905.192µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:52:17.349 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     34.892µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:52:17.352 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    831.577µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:52:52.754 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.543µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:52:52.757 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    691.641µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:56:06.499 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     28.834µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:56:06.501 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    610.521µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/20 16:56:43.194 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.631µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/20 16:56:43.197 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    736.153µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 09:24:07.549 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/24 10:16:19.593 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.782604813s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/24 10:16:20.014 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.287µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/24 10:16:20.019 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    782.485µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 10:16:21.787 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    638.606µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 11:07:53.846 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    641.542µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/24 11:07:53.849 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    714.419µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 11:09:30.610 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|       18.1µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/24 11:09:30.612 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     764.11µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 11:09:48.385 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.803µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/24 11:09:48.388 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    755.947µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 11:10:06.089 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    200.558µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/24 11:10:06.092 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    813.056µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 11:10:21.801 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     36.217µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/24 11:10:21.803 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    613.673µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 11:11:10.043 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     14.496µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/24 11:11:10.045 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    602.713µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/24 11:11:34.136 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.603µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/24 11:11:34.139 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    628.715µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 09:50:07.466 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/25 09:56:09.212 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.789208889s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/25 09:56:09.707 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.764µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 09:56:09.710 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     881.88µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 09:56:12.649 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    665.809µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 10:09:20.224 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     42.846µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 10:09:20.227 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    736.466µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 10:09:36.197 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.542µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 10:09:36.200 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    694.724µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:13:33.516 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     24.744µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:13:33.519 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    630.622µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:14:12.525 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.688µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:14:12.528 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    705.316µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:14:44.992 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.564µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:14:44.995 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.166957ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:14:58.734 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.722µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:14:58.736 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    713.933µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:15:01.672 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.883µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:15:01.676 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    686.286µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:15:03.999 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.806µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:15:04.002 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    700.185µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:15:11.058 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.978µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:15:11.060 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    615.974µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:15:39.581 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.451µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:15:39.583 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    601.269µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:16:54.393 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.911µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:16:54.396 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    779.741µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:16:57.199 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.715µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:16:57.202 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    805.774µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:17:15.318 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      40.64µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:17:15.321 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    552.157µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:17:41.184 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.752µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:17:41.187 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     621.34µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:18:22.004 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     39.735µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:18:22.007 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    586.559µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:18:44.527 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      22.08µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:18:44.530 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    671.423µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:19:10.496 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    184.738µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:19:10.499 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    634.018µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:19:29.649 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.233µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:19:29.652 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    710.891µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:42:52.005 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     33.985µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:42:52.008 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    757.139µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:43:46.030 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     35.498µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:43:46.033 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    718.783µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:44:41.339 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    150.886µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:44:41.343 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     686.86µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:45:04.191 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.569µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:45:04.195 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    710.563µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:47:21.922 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.376µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:47:21.924 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    718.386µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:47:37.792 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     26.133µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:47:37.795 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     822.28µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:47:42.867 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.914µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:47:42.870 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    714.543µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:48:25.559 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.028µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:48:25.562 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    620.546µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:48:58.789 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.819µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:48:58.792 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    697.522µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:49:37.064 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     24.122µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:49:37.066 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    610.452µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:54:44.562 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     43.637µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:54:44.565 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    600.214µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:57:01.270 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.818µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:57:01.274 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    973.104µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:57:52.039 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     40.851µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:57:52.042 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    989.992µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:58:12.058 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.554µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:58:12.061 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    718.122µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:58:37.493 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      16.09µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:58:37.496 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    887.869µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 11:59:26.114 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.413µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 11:59:26.118 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    776.825µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:00:19.354 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    140.631µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:00:19.357 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    635.376µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:01:17.526 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.507µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:01:17.529 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    636.341µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:01:20.864 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.145µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:01:20.867 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     755.35µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:01:27.117 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.884µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:01:27.120 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    691.084µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:01:54.544 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     26.399µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:01:54.547 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      577.2µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:02:13.484 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.774µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:02:13.487 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    662.535µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:02:24.407 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    204.342µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:02:24.410 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    677.024µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:03:08.965 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.239µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:03:08.968 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    578.081µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:04:40.779 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     37.293µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:04:40.782 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    916.381µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:04:53.112 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.751µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:04:53.115 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    575.951µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:06:03.360 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.283µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:06:03.363 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    713.164µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:06:07.746 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.833µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:06:07.749 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|        712µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:07:03.258 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    265.553µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:07:03.261 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    688.153µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:08:09.907 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.697µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:08:09.910 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    659.178µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:08:41.469 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.975µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:08:41.472 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    623.624µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:09:18.438 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.326µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:09:18.441 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    772.205µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:10:07.425 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.075µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:10:07.428 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     665.63µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:11:05.119 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.988µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:11:05.122 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    627.853µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 12:11:07.350 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      18.78µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 12:11:07.353 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     723.06µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:39:51.324 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     37.952µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:39:51.634 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  71.953473ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:40:09.742 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.576µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:40:09.745 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    858.479µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:40:12.593 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      16.44µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:40:12.596 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    723.031µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:43:07.222 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     30.035µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:43:07.225 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    760.973µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:46:23.111 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.456µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:46:23.115 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     651.76µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:46:28.838 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|       21.7µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:46:28.841 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    718.818µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:52:17.091 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.223µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:52:17.093 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    708.096µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:54:50.487 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.716µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:54:50.490 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    607.431µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:55:20.295 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    232.115µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:55:20.298 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    693.975µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:56:05.984 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     26.143µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:56:05.987 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     685.67µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:56:29.255 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.915µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:56:29.258 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    682.572µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:56:43.325 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.962µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:56:43.328 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    708.113µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:59:12.565 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.405µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:59:12.568 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    747.687µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 14:59:26.107 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.943µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 14:59:26.111 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.615731ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:00:33.352 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     39.284µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:00:33.355 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    725.798µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:00:38.534 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      23.96µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:00:38.537 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    704.574µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:00:56.015 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.002µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:00:56.018 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    626.325µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:01:36.247 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.138µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:01:36.250 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    549.116µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:01:50.523 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.872µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:01:50.526 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    686.145µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:02:56.819 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.795µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:02:56.822 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      815.2µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:03:12.394 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.886µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:03:12.396 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    617.212µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:03:54.988 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      16.47µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:03:54.991 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    757.092µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:18:06.319 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     30.054µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/25 15:18:06.322 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    594.015µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/25 15:20:04.007 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 1.162486973s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/25 15:20:17.197 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 299.580581ms|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/25 15:20:26.017 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    569.747µs|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/25 15:23:50.550 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.482µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/25 15:23:50.551 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.759µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/25 15:23:50.557 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     28.693µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/25 15:23:50.563 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.583µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/25 15:23:51.159 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 101.241985ms|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/25 15:23:51.159 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  105.12752ms|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/25 15:23:51.159 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 103.934809ms|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/25 15:23:51.214 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  159.23455ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/25 15:24:19.059 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     24.311µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/25 15:24:19.060 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     37.554µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/25 15:24:19.065 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.134µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/25 15:24:19.070 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     74.119µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/25 15:24:19.097 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    606.111µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/25 15:24:19.099 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    363.719µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/25 15:24:19.099 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    635.179µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/25 15:24:19.112 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  15.259142ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/25 15:26:23.427 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    317.579µs|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/25 15:33:35.484 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     40.194µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/25 15:33:35.485 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.561µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/25 15:33:35.488 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.952µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/25 15:33:35.491 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.568µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/25 15:33:35.526 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    963.909µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/25 15:33:35.529 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    952.672µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/25 15:33:35.529 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    996.939µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/25 15:33:35.542 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  17.176633ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/25 16:26:02.470 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.749µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/25 16:26:02.471 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.355µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/25 16:26:02.475 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     43.213µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/25 16:26:02.478 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.008µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/25 16:26:02.501 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    731.515µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/25 16:26:02.502 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    536.344µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/25 16:26:02.505 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    419.773µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/25 16:26:02.516 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  15.537876ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/25 16:26:43.473 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    183.605µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/25 16:26:43.473 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      18.45µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/25 16:26:43.478 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.898µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/25 16:26:43.481 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.238µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/25 16:26:43.507 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    770.575µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/25 16:26:43.507 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    467.047µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/25 16:26:43.510 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    337.532µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/25 16:26:43.522 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  15.249985ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/25 16:49:24.385 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 06:37:55.122 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 10:38:15.667 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     363.98µs|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/26 10:38:20.696 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.858µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 10:38:20.697 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     33.384µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 10:38:20.703 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     46.315µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 10:38:20.706 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.679µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 10:38:20.831 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  41.049379ms|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 10:38:20.831 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   40.59596ms|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 10:38:20.831 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  42.486233ms|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 10:38:20.927 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 138.646355ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 10:44:57.894 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 10:45:05.446 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 10:49:46.845 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 10:51:29.362 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 11:01:56.453 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 11:03:07.158 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 11:25:43.580 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     37.255µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:25:43.581 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     12.973µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:25:43.584 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.307µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:25:43.588 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.753µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:25:43.591 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     51.263µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:25:43.611 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    679.521µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:25:43.612 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.914577ms|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:25:43.612 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.515161ms|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:25:43.615 [D] [server.go:2802]  |            ::1|[97;43m 404 [0m|    144.611µs| nomatch|[97;44m GET     [0m /v1/admin/taskadmin/
+2020/02/26 11:25:43.626 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  16.281804ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:26:21.818 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.538µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:26:21.819 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.814µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:26:21.823 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.625µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:26:21.826 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     24.729µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:26:21.830 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     85.652µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:26:21.854 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    745.854µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:26:21.855 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     528.19µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:26:21.855 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.345474ms|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:26:21.858 [D] [server.go:2802]  |            ::1|[97;43m 404 [0m|    257.322µs| nomatch|[97;44m GET     [0m /v1/admin/taskadmin/
+2020/02/26 11:26:21.872 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  18.533251ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:27:36.437 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.164µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:27:36.437 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.945µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:27:36.441 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.484µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:27:36.444 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      23.01µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:27:36.448 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      18.23µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:27:36.473 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    970.866µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:27:36.476 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    617.001µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:27:36.476 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    741.645µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:27:36.478 [D] [server.go:2802]  |            ::1|[97;43m 404 [0m|    167.537µs| nomatch|[97;44m GET     [0m /v1/admin/taskadmin/
+2020/02/26 11:27:36.488 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  15.244838ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:27:48.386 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.745µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:27:48.387 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.092µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:27:48.391 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.794µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:27:48.395 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     25.223µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:27:48.400 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.088µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:27:48.438 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     571.13µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:27:48.439 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    503.176µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:27:48.441 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    330.778µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:27:48.441 [D] [server.go:2802]  |            ::1|[97;43m 404 [0m|    181.539µs| nomatch|[97;44m GET     [0m /v1/admin/taskadmin/
+2020/02/26 11:27:48.453 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  15.582253ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:28:03.686 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 11:28:07.396 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      59.13µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:28:07.397 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     87.016µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:28:07.402 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.207µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:28:07.406 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.269µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:28:07.411 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     28.095µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:28:07.455 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    671.327µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:28:07.457 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    346.876µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:28:07.460 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    714.079µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:28:07.460 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.044593ms|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 11:28:07.480 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  25.194261ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:28:33.741 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.743µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:28:33.742 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.462µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:28:33.747 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      20.77µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:28:33.751 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     45.888µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:28:33.756 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.565µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:28:33.797 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    588.527µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:28:33.797 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     441.62µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:28:33.800 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    407.112µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:28:33.800 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    848.832µs|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 11:28:33.812 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   16.14323ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:28:57.913 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.758µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:28:57.914 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     14.668µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:28:57.920 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.846µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:28:57.926 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     34.044µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:28:57.930 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.409µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:28:57.968 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    467.175µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:28:57.970 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    569.559µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:28:57.970 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    623.682µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:28:57.970 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    621.821µs|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 11:28:57.987 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  18.078421ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:29:38.021 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/02/26 11:29:58.357 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    580.258µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:29:58.357 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     49.505µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:29:58.363 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.188µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:29:58.368 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     33.071µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:29:58.373 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.856µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:29:58.410 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    693.661µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:29:58.411 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    617.439µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:29:58.414 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      408.9µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:29:58.414 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    448.344µs|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 11:29:58.426 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  15.644418ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:32:14.088 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    262.313µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:32:14.089 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.698µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:32:14.094 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      41.41µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:32:14.100 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      23.52µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:32:14.104 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.198µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:32:14.141 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    541.074µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:32:14.143 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    475.317µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:32:14.144 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    482.456µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:32:14.146 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     531.84µs|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 11:32:14.157 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  15.821176ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 11:36:20.368 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.477µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 11:36:20.369 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.743µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 11:36:20.375 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.552µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 11:36:20.379 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     53.772µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 11:36:20.384 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.417µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 11:36:20.408 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    745.781µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 11:36:20.411 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    514.657µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 11:36:20.411 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    984.324µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 11:36:20.413 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.198808ms|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 11:36:20.425 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  17.398232ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 14:57:57.806 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    143.059µs| nomatch|[90;47m OPTIONS [0m /v1/user
+2020/02/26 14:57:57.859 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   8.130936ms|   match|[97;44m GET     [0m /v1/user   r:/v1/user/
+2020/02/26 14:58:19.717 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     43.372µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 14:58:19.718 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.166µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 14:58:19.723 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.426µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 14:58:19.727 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     35.572µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 14:58:19.732 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.784µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 14:58:19.756 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     649.73µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 14:58:19.758 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    498.649µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 14:58:19.758 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    803.532µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 14:58:19.760 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    462.081µs|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 14:58:19.771 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  15.669858ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 14:58:24.096 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     73.787µs| nomatch|[90;47m OPTIONS [0m /v1/user
+2020/02/26 14:58:24.145 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   7.555093ms|   match|[97;44m GET     [0m /v1/user   r:/v1/user/
+2020/02/26 15:00:50.861 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    129.321µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 15:00:50.862 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|       19.8µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 15:00:50.868 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.105µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 15:00:50.874 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.359µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 15:00:50.878 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.155µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 15:00:50.901 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    663.476µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 15:00:50.903 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    476.865µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 15:00:50.904 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    763.714µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 15:00:50.906 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    383.662µs|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 15:00:50.915 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  14.089818ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 15:00:55.458 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.903µs| nomatch|[90;47m OPTIONS [0m /v1/user
+2020/02/26 15:00:55.478 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    7.11002ms|   match|[97;44m GET     [0m /v1/user   r:/v1/user/
+2020/02/26 15:01:17.556 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.847µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 15:01:17.565 [D] [server.go:2802]  |            ::1|[97;43m 404 [0m|    230.617µs| nomatch|[97;46m POST    [0m /v1/admin/vmsadmin/
+2020/02/26 15:01:51.982 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.204µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 15:01:51.983 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     41.722µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 15:01:51.988 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.287µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 15:01:51.992 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      21.26µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 15:01:51.997 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.985µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 15:01:52.021 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    561.383µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 15:01:52.024 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    691.049µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 15:01:52.025 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    539.159µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 15:01:52.027 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     529.94µs|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 15:01:52.038 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  16.542097ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 15:01:54.484 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     50.867µs| nomatch|[90;47m OPTIONS [0m /v1/user
+2020/02/26 15:01:54.533 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  10.372477ms|   match|[97;44m GET     [0m /v1/user   r:/v1/user/
+2020/02/26 15:02:00.502 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     46.103µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 15:02:00.509 [D] [server.go:2802]  |            ::1|[97;43m 404 [0m|    181.325µs| nomatch|[97;46m POST    [0m /v1/admin/vmsadmin/
+2020/02/26 15:07:31.615 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      45.38µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 15:07:31.616 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.525µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 15:07:31.621 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.004µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 15:07:31.627 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     34.014µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 15:07:31.632 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.729µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 15:07:31.658 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    573.701µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 15:07:31.658 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    513.191µs|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 15:07:31.661 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    401.319µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 15:07:31.662 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     710.35µs|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 15:07:31.672 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  14.098661ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 15:07:45.161 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.426µs| nomatch|[90;47m OPTIONS [0m /v1/user
+2020/02/26 15:07:45.181 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   6.480709ms|   match|[97;44m GET     [0m /v1/user   r:/v1/user/
+2020/02/26 15:07:52.068 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      73.47µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/1
+2020/02/26 15:07:52.130 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  37.401923ms|   match|[97;46m POST    [0m /v1/admin/taskadmin/1   r:/v1/admin/taskadmin/:userid
+2020/02/26 15:07:54.459 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.794µs| nomatch|[90;47m OPTIONS [0m /v1/admin/hro/
+2020/02/26 15:07:54.459 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      13.98µs| nomatch|[90;47m OPTIONS [0m /v1/admin/teamlead/
+2020/02/26 15:07:54.466 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      21.99µs| nomatch|[90;47m OPTIONS [0m /v1/admin/frontdesk/
+2020/02/26 15:07:54.471 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     40.416µs| nomatch|[90;47m OPTIONS [0m /v1/admin/vmsadmin/
+2020/02/26 15:07:54.475 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      17.26µs| nomatch|[90;47m OPTIONS [0m /v1/admin/taskadmin/
+2020/02/26 15:07:54.513 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    472.787µs|   match|[97;44m GET     [0m /v1/admin/hro/   r:/v1/admin/hro/
+2020/02/26 15:07:54.515 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    412.654µs|   match|[97;44m GET     [0m /v1/admin/vmsadmin/   r:/v1/admin/vmsadmin/
+2020/02/26 15:07:54.516 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.152566ms|   match|[97;44m GET     [0m /v1/admin/frontdesk/   r:/v1/admin/frontdesk/
+2020/02/26 15:07:54.516 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.340841ms|   match|[97;44m GET     [0m /v1/admin/taskadmin/   r:/v1/admin/taskadmin/
+2020/02/26 15:07:54.539 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  24.999437ms|   match|[97;44m GET     [0m /v1/admin/teamlead/   r:/v1/admin/teamlead/
+2020/02/26 15:09:52.162 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m| 3.161934456s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/02/26 15:09:52.431 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      15.93µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:09:52.434 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    612.025µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:22:05.930 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     44.392µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:22:05.934 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    675.583µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:23:15.363 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     15.185µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:23:15.366 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    595.417µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:38:41.656 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     55.141µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:38:41.659 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    620.981µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:38:42.639 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     21.346µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:38:42.642 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    594.191µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:38:56.434 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.575µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:38:56.437 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    711.654µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:39:20.802 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     19.289µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:39:20.804 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    632.269µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:39:26.463 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     34.775µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:39:26.466 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    800.553µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:39:36.729 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      23.19µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:39:36.732 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    636.392µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:39:57.799 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.207µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:39:57.802 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    627.628µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:39:59.651 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.437µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:39:59.654 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     715.15µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:40:15.473 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     23.166µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:40:15.476 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    727.057µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:40:35.700 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      15.76µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:40:35.703 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     631.11µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:40:43.527 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     22.459µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:40:43.530 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    666.144µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:41:01.610 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      21.73µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:41:01.613 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    725.711µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:41:03.891 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     16.703µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:41:03.894 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    696.248µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:41:05.225 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     18.128µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:41:05.228 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    728.026µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:52:51.400 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     31.524µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:52:51.403 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    807.821µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:52:57.999 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     17.257µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:52:58.002 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    725.221µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:52:59.605 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      23.77µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:52:59.608 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     682.02µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 15:53:17.326 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     20.597µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 15:53:17.329 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    748.127µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 16:30:53.376 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|      35.41µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 16:30:53.379 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    650.473µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 16:31:10.235 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     29.817µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 16:31:10.238 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     725.53µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 16:31:28.668 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     35.041µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 16:31:28.671 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    737.042µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/02/26 16:32:34.468 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     36.685µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/02/26 16:32:34.471 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    642.726µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate

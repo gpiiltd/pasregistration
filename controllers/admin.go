@@ -202,3 +202,41 @@ func (a *AdminController) DeleteVMSAdmin() {
 	a.Data["json"] = models.DeletevmsAdmin(adminID)
 	a.ServeJSON()
 }
+
+//AddTaskAdmin adds a new daily task Admin to the system
+// @Title AddTaskAdmin
+// @Description adds a new daily task admin to the system
+// @Param	userid		path 	string	true		"the id of the user you want to make an admin."
+// @Success 200 {string} id of the user
+// @Failure 403 body is empty
+// @router /taskadmin/:userid [post]
+func (a *AdminController) AddTaskAdmin() {
+	var taskAdmin models.User
+	taskAdminID := a.GetString(":userid")
+	taskAdmin, err := models.GetDataFromIDString(taskAdminID)
+	if err != nil {
+		a.Data["json"] = models.ErrorResponse(404, "User data does not exist")
+		a.ServeJSON()
+		return
+	}
+	addVMSAdmin := models.AddTaskAdminOfficer(taskAdmin)
+	a.Data["json"] = addVMSAdmin
+	a.ServeJSON()
+}
+
+//GetAllTaskAdmin gets all task admin in the system
+// @Title GetAllTaskAdmin
+// @Description gets the list of all task admin officers on the system
+// @Success 200 {object} []models.User
+// @Failure 403 body is empty
+// @router /taskadmin/ [get]
+func (a *AdminController) GetAllTaskAdmin() {
+	allTaskAdmin, err := models.GetAllSystemTaskAdmin()
+	if err != nil {
+		a.Data["json"] = models.ErrorResponse(403, "Unable to get all system admin ")
+		a.ServeJSON()
+		return
+	}
+	a.Data["json"] = models.ValidResponse(200, allTaskAdmin, "success")
+	a.ServeJSON()
+}

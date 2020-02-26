@@ -229,6 +229,23 @@ func AddVMSAdminOfficer(vmsAdmin User) interface{} {
 	return ValidResponse(200, "Successfully added team lead", "success")
 }
 
+//AddTaskAdminOfficer adds a new task admin to the system
+func AddTaskAdminOfficer(taskAdmin User) interface{} {
+	isTaskAdmin := IsTaskAdmin(taskAdmin)
+	if isTaskAdmin == true {
+		return ValidResponse(401, "User already a task admin", "error")
+	}
+	var role Roles
+	role.Code = UserRoles.TaskAdmin
+	role.Role = "Task Admin"
+	role.User = taskAdmin.FullName
+	role.UserID = taskAdmin.ID
+	if createRole := Conn.Create(&role); createRole.Error != nil {
+		return ValidResponse(403, "Unable to add task admin", "error")
+	}
+	return ValidResponse(200, "Successfully added team lead", "success")
+}
+
 //GetAllVMSAdmin gets all vms admin on the system
 func GetAllVMSAdmin() interface{} {
 	var allVMSAdmin []Roles
@@ -245,6 +262,24 @@ func GetAllVMSAdmin() interface{} {
 		userArray = append(userArray, u)
 	}
 	return ValidResponse(200, userArray, "success")
+}
+
+//GetAllSystemTaskAdmin retrrieves a list of all task admin from the system
+func GetAllSystemTaskAdmin() ([]User, error) {
+	var allTaskAdmin []Roles
+	if getAlladmin := Conn.Where("code = ?", UserRoles.TaskAdmin).Find(&allTaskAdmin); getAlladmin.Error != nil {
+		return []User{}, getAlladmin.Error
+	}
+	var u User
+	var userArray []User
+	for _, role := range allTaskAdmin {
+		u.ID = role.UserID
+		if getUser := Conn.Where("id = ?", role.UserID).Find(&u); getUser.Error != nil {
+			return userArray, getUser.Error
+		}
+		userArray = append(userArray, u)
+	}
+	return userArray, nil
 }
 
 //DeletevmsAdmin deletes a vms admin from the system

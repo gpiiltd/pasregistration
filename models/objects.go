@@ -17,6 +17,7 @@ type DBConfig struct {
 
 func init() {
 	SetupDatabase()
+	SetupUserRole()
 }
 
 //Model objects for gorm
@@ -31,6 +32,15 @@ type Model struct {
 type Subsidiaries struct {
 	Model
 	Subsidiary string `gorm:"varchar(100)" json:"subsidiary"`
+}
+
+//RoleValues holds the values for user roles
+type RoleValues struct {
+	VMSAdminOfficer  uint64
+	HROfficer        uint64
+	PASTeamLead      uint64
+	FrontDeskOfficer uint64
+	TaskAdmin        uint64
 }
 
 //Departments holds the list of deparments and subsidiaries belonging
