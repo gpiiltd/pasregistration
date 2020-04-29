@@ -1,0 +1,46 @@
+2020/01/15 06:07:45.340 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  2.84720682s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/01/15 06:07:45.621 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     27.314µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/01/15 06:07:45.627 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|   1.569867ms|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/01/15 06:22:07.671 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:29:22.547 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:31:07.547 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:32:09.641 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:33:51.915 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:33:55.086 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:33:57.127 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:34:57.454 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:44:22.651 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:45:22.102 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:46:23.075 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 08:47:33.377 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 09:04:12.734 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 09:45:23.252 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 09:47:05.334 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 09:48:13.749 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 09:48:39.532 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 10:40:39.008 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 10:41:41.364 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 10:42:38.214 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 11:06:46.284 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 11:07:27.250 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 11:15:09.679 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 11:45:28.488 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 13:41:41.843 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 13:42:24.455 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 13:55:09.528 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 13:57:05.296 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 14:07:19.004 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 14:12:49.474 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 14:14:51.768 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|  2.14383509s|   match|[97;46m POST    [0m /v1/user/login   r:/v1/user/login
+2020/01/15 14:14:51.904 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    109.644µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
+2020/01/15 14:14:51.907 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    766.079µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
+2020/01/15 14:16:52.105 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 14:50:21.542 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 15:07:49.122 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 15:08:41.951 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 15:18:51.628 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 15:21:00.667 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 15:21:38.214 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 15:25:48.959 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/15 20:47:37.930 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/01/16 09:17:13.884 [I] [asm_amd64.s:1357]  http server Running on http://:9905
