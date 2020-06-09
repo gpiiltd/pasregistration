@@ -223,3 +223,4 @@
 2020/06/09 11:49:32.713 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|     55.904µs| nomatch|[90;47m OPTIONS [0m /v1/token/validate
 2020/06/09 11:49:32.715 [D] [server.go:2802]  |            ::1|[97;42m 200 [0m|    686.114µs|   match|[97;44m GET     [0m /v1/token/validate   r:/v1/token/validate
 2020/06/09 12:58:47.046 [I] [asm_amd64.s:1357]  http server Running on http://:9905
+2020/06/09 14:55:00.185 [I] [asm_amd64.s:1357]  http server Running on http://:9905
