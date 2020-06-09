@@ -38,7 +38,7 @@ func GetTeamLeads() interface{} {
 		u.ID = role.UserID
 		if getUser := Conn.Where("id = ?", role.UserID).Find(&u); getUser.Error != nil {
 			LogError(getUser.Error.Error())
-			return ErrorResponse(401, "Error get user information from role email")
+			return ErrorResponse(401, getUser.Error.Error())
 		}
 		userArray = append(userArray, u)
 	}

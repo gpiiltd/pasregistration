@@ -127,7 +127,7 @@ func CreateteamLeadRole(lead User) {
 //LogError logs the error in a file
 func LogError(errorMessage string) {
 	log := logs.GetBeeLogger()
-	// logs.SetLogger(logs.AdapterFile, `{"filename": "./error-logs/log.log", "level": 7, "maxlines": 0, "maxsize":0,"daily":true,"maxdays":10,"color":true}`)
+	logs.SetLogger(logs.AdapterFile, `{"filename": "./error-logs/log.log", "level": 7, "maxlines": 0, "maxsize":0,"daily":true,"maxdays":10,"color":true}`)
 	log.Error(errorMessage, "error")
 	return
 
