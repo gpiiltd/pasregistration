@@ -38,7 +38,7 @@ func GetTeamLeads() interface{} {
 		u.ID = role.UserID
 		if getUser := Conn.Where("id = ?", role.UserID).Find(&u); getUser.Error != nil {
 			LogError(getUser.Error.Error())
-			return ValidResponse(401, teamLeads, getUser.Error.Error())
+			// return ValidResponse(401, teamLeads, getUser.Error.Error())
 		}
 		userArray = append(userArray, u)
 	}
